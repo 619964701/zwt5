@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>增加职位</title>
+<style type="text/css">
+.span{
+	color:red;
+}
+</style>
+<meta name="description" content="Dashboard">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Basic Styles-->
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/jquery.datetimepicker.css"/>
+<script type="text/javascript" src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+//验证表单
+function validate_required(field,alerttxt){
+	with (field){
+	  if (value==null||value==""){
+		  alert(alerttxt);return false
+	    }else {
+	    	return true
+	    }
+	}
+}
+function validate_form(thisform){
+	with (thisform){
+	  if (validate_required(zhiwei,"职位必填!")==false){
+		  zhiwei.focus();return false
+	  }
+	  if (validate_required(bumen,"所属部门必填!")==false){
+		  bumen.focus();return false
+	  }
+	  if (validate_required(renshu,"招聘人数必填!")==false){
+		  renshu.focus();return false
+	  }
+	  if (validate_required(didian,"工作地点必填!")==false){
+		  didian.focus();return false
+	  }
+	  if (validate_required(introtext,"岗位职责与要求必填!")==false){
+		  introtext.focus();return false
+	  }
+	  if (validate_required(start,"发布开始时间必填!")==false){
+		  start.focus();return false
+	  }
+	  if (validate_required(end,"职位结束时间必填!")==false){
+		  end.focus();return false
+	  }
+	  
+    }
+}
+</script>
+</head>
+<body>
+（带 <span class="span">*</span> 为必填项）
+<form action="{:url('zhaopin/insert')}" enctype="multipart/form-data" method="post" onsubmit="return validate_form(this);">
+<table  border="1" cellspacing ="0" cellpadding="0" width="90%" style="line-height:30px;">
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>职位名称：</td>
+			<td style="text-indent:15px;"><input type="text" name="zhiwei"/></td>
+		</tr>	
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>所属部门：</td>
+			<td style="text-indent:15px;"><input type="text" name="bumen"/></td>
+		</tr>		
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>招聘人数：</td>
+			<td style="text-indent:15px;"><input type="text" name="renshu"/></td>
+		</tr>		
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>工作地点：</td>
+			<td style="text-indent:15px;"><input type="text" name="didian"/></td>
+		</tr>		
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>岗位职责与要求：</td>
+			<td style="text-indent:15px;"><textarea id="a1" name="introtext" style="width:500px;height:300px;"></textarea></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>开始时间：</td>
+			<td style="text-indent:15px;"><input type="text" id="datetimepicker1" name="start"/></td>
+		</tr>	
+		<tr>
+			<td style="text-align:right;"><span class="span">*</span>结束时间：</td>
+			<td style="text-indent:15px;"><input type="text" name="end" id="datetimepicker2"/></td>
+		</tr>	
+		<tr>
+			<td></td><td><input  size="25" type="submit" value="提交"/></td>
+		</tr>			
+</table>
+</form>
+<script src="/static/homeback/js/jquerytime.js"></script>
+<script src="/static/homeback/js/jquery-1.12.4.min.js"></script>
+<script src="/static/homeback/js/jquery.datetimepicker.full.js"></script>
+<script>
+//选择查询的开始 结束时间
+var dateToDisable = new Date();
+$.datetimepicker.setLocale('ch');
+$('#datetimepicker1,#datetimepicker2').datetimepicker({
+	format:"Y-m-d",
+	yearStart:2017,     //设置最小年份
+	timepicker:false    //关闭时间选项
+});
+$('#datetimepicker1,#datetimepicker2').datetimepicker({
+	beforeShowDay: function(date) {
+		if (date.getMonth() == dateToDisable.getMonth() && date.getDate() == dateToDisable.getDate()) {
+			return [true, "custom-date-style"];
+		}
+		return [true, ""];
+	}
+});
+</script>
+</body>
+</html>

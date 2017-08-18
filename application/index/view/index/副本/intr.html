@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>集团新闻</title>
+   	<link rel="stylesheet" href="/static/index/css/intr.css">
+   	<link rel="stylesheet" type="text/css" href="/static/index/css/base.css"/>
+    <link rel="stylesheet" href="/static/index/css/footer.css">
+	<link rel="stylesheet" href="/static/index/css/header1.css">
+	<link rel="stylesheet" href="/static/index/css/page.css">
+	<style type="text/css">
+		a:hover{
+			color:#A6272C!important; 
+		}
+		.content-p a{
+			color:red;
+		}
+		a{
+			color:#000;
+		}
+	</style>
+</head>
+<body>
+	 <!-- 首页头部开始 -->
+	{include file="Public/top" /}
+	<!-- 首页头部结束-->
+    <img src="{$danav.img}" alt="" height="356.81" width="100%">
+
+
+	<div class="main-instr">
+		<div class="breadNav">
+	        <span class="home">
+	        </span>
+	                  您现在所在的位置：<a href="{:url('index/index')}">上海竹文投资管理有限公司</a>
+	        ><a href="{:url('index/nav',['id'=>$danav.id])}">{$danav.navName}</a>>{$navName}
+	        
+      	</div>
+      	<!-- 横线 -->
+      	<div class="line"></div>
+		<div class="tabs">
+			<ul>
+				<li class="er_code">
+            		<img src="/static/index/img/erweima.png" alt="" style="padding:15px">
+          		</li>
+          		{volist name="xiaonav" id="xiao" key="k"}
+               	{if condition="($xiao.navEname==$navEname)"}
+               	<li><a class="tab-active" data-index="{$k-1}" href="{:url('index/nav',['id'=>$xiao.id])}">{$xiao.navName}</a></li>
+               	{else/}
+               	<li><a data-index="{$k-1}" href="{:url('index/nav',['id'=>$xiao.id])}">{$xiao.navName}</a></li>
+               	{/if}
+               	{/volist}
+			</ul>
+      		<!-- <div class="line1"></div> -->
+
+			<div class="tabs-content line1">
+
+				<div class="slider-wrapper tab-content-active">
+				{volist name="intr" id="vo"}
+					<div class="slider-content">
+						<a href="{:url('index/article',['id'=>$vo.id])}" target="_blank">
+							<img src="{$vo.img}" width="184px" height="126px" alt=""  class="left">
+			         	</a>
+				        <div class="content-right right">
+				            <h3 style="text-align:left"><a href="{:url('index/article',['id'=>$vo.id])}">{$vo.title}</a></h3>
+				            <p class="content-p">
+				            {$vo.yinxu}
+				              <a href="{:url('index/article',['id'=>$vo.id])}" style="font-weight:bold">>>查看详情</a>
+				            </p>
+				        </div>
+					</div>
+				{/volist}
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	{$page}
+     <!-- 底部开始 -->
+	{include file="Public/footer" /}
+</body>
+<script src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".a-t:eq(1)").css("color","#666");
+    });
+</script>
+</html>

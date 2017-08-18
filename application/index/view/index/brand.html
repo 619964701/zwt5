@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta name="format-detection" content="telephone=no">
+    <title>旗下公司</title>
+    <link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/index/css/style.css"/>
+	<link rel="stylesheet" href="/static/index/css/science.css">
+</head>
+<body>
+<!-- 首页头部开始 -->
+	{include file="Public/top" /}
+	<!-- 首页头部结束-->
+	<div class="fBg"></div>
+	<div class="page-container">
+		<div class="pageAbsout">
+		<a href="/" class="indexlogo"></a>
+		<a href="">您所在的位置：</a> &gt; 
+		<a href="{:url('index/index')}">竹文投</a> &gt; 
+		<a href="{:url('index/'.$onenav.htmlName,['id'=>$onenav.id])}">{$onenav.navName}</a> &gt; 
+		<a class="cur" id="cur" href="">{$location}</a>
+		</div>
+	</div>
+	<!-- 品牌部分 -->
+	<div class="science-brand">
+		<div class="page-brand">
+			{if condition="($location=='所有领域')"}
+			<div class="brand-option brand">
+			{else/}
+			<div class="brand-option">
+			{/if}
+				<a href="{:url('index/'.$onenav.htmlName,['id'=>$onenav.id])}">所有领域</a>
+			</div>
+			{volist name="twonav" id="vo"}
+			{if condition="($location==$vo.navName)"}
+			<div class="brand-option brand">
+			{else/}
+			<div class="brand-option">
+			{/if}
+				<a href="{:url('index/'.$vo.htmlName,['id'=>$vo.id])}">{$vo.navName}</a>
+			</div>
+			{/volist}
+			<!-- <img src="../img/partner.png" alt="" title="合作伙伴.png"> -->
+		</div>
+		<div class="clearfix"></div>
+		<!-- 品牌 -->
+		<div class="card">
+			
+			<div class="page-brand-list  hover">
+				{volist name="sannav" id="vo"}
+				<div class="page-brand-item">
+					<div><br></div>
+					<div class="page-brand-logo" style="background: url({$vo.img}) no-repeat center;" onclick="window.open('{:url('index/article',['pid'=>$vo.id])}')"></div>
+					<div class="page-brand-more" onclick="window.open('{:url('index/article',['pid'=>$vo.id])}')"></div>
+				</div>
+				{/volist}
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部开始 -->
+	{include file="Public/footer" /}
+	
+	
+</body>
+<script src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script src="/static/index/js/index.js"></script>
+
+</html>
+

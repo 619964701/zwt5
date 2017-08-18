@@ -1,0 +1,30 @@
+	<div class="flicker-example">
+    <ul>
+        <li data-background="/static/index/img/banner01.png">
+           
+        </li>
+        <li data-background="/static/index/img/banner02.png">
+            
+        </li>
+        <li data-background="/static/index/img/banner03.png">
+            
+        </li>
+    </ul>
+</div>
+<script>
+	$(function(){
+    $('.flicker-example').flicker({
+        arrows: true,
+        arrows_constraint: false,
+        auto_flick: true,
+        auto_flick_delay: 5,
+        block_text: true,
+        dot_navigation: true,
+        dot_alignment: 'center',
+        flick_animation: 'transform-slide',
+        flick_position: 1,
+        inner_width: false,
+       
+    });
+});
+</script>

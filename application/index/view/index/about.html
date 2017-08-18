@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="format-detection" content="telephone=no">
+<title>联系我们</title>
+<link rel="stylesheet" href="/static/index/css/base1.css">
+<link rel="stylesheet" href="/static/index/css/style.css">
+<link rel="stylesheet" href="/static/index/css/contact/public.css">
+<link rel="stylesheet" href="/static/index/css/contact/{$twonav.cssName}.css">
+</head>
+<body>
+<!-- 首页头部开始 -->
+	{include file="Public/top" /}
+	<!-- 首页头部结束-->
+	<img src="/static/index/img/contact.jpg" alt="" width="100%">
+	<div class="page-container">
+		<div class="pageAbsout">
+	    	<a href="/" class="indexlogo"></a>
+	        <a href="">您所在的位置：</a>
+	        <a href="/">竹文投</a> &gt;  
+	        <a href="{:url('index/'.$onenav.htmlName,['id'=>$onenav.id])}">{$onenav.navName}</a> &gt; 
+	        <a href="" class="cur">{$twonav.navName}</a>
+		</div>
+		{$article.introtext}
+		
+	</div>
+
+
+<!-- 底部开始 -->
+	{include file="Public/footer" /}
+</body>
+<script src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script src="/static/index/js/index.js"></script>
+<script>
+	$(".down_2:nth-").css("display","block");
+
+</script>
+</html>

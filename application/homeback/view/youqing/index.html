@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>防伪码首页</title>
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/adminlist.css" />
+<meta name="description" content="Dashboard">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Basic Styles-->
+</head>
+<body>
+<br><a href="{:url('youqing/add')}">增加友情链接</a>
+		<table  border ="1" cellspacing ="0" cellpadding="0" width="99%">
+			<tr style="height:30px;text-align:center;">
+           		<th>ID</th>
+           		<th>友情链接标题</th>
+           		<th>友情链接图片路径</th>
+           		<th>友情链接缩略图</th>
+           		<th>友情链接URL</th>
+           		<th>操作</th>
+	        </tr>
+			{volist name="data" id="vo"}
+	        <tr style="text-align:center;height:30px;">
+	        	<td>{$vo.id}</td>
+	        	<td>{$vo.title}</td>
+	        	<td>{$vo.img}</td>
+	        	<td>
+					<img height="70px" src="{$vo.img}"/>
+				</td>
+	        	<td style="color:#1BA800;">{$vo.url}</td>
+	        	<td>
+					<a href="{:url('youqing/edit',['id' => $vo.id])}"><button type="button" style="height:32px;background-color:#DD1641;color:white;">改</button></a>
+					<button value="{$vo.id}" onclick="del(this.value);return false;" type="button" style="height:32px;background-color:#DD1641;color:white;">删</button>
+				</td>
+			</tr>
+			{/volist}
+		</table>
+<script type="text/javascript">
+function del(val){
+	if(window.confirm('请确认是否删除')){
+		window.location.href="{:url('youqing/delete')}?id="+val;
+	}
+}
+</script>
+<script src="/static/homeback/js/jquerytime.js"></script>
+<script src="/static/homeback/js/jquery-1.12.4.min.js"></script>
+<script src="/static/homeback/js/jquery.datetimepicker.full.js"></script>
+</body>
+</html>

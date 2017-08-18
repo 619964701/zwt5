@@ -1,0 +1,41 @@
+<!-- 头部 -->
+		<div class="header-header">
+			<div class="header clearfix">
+				<!-- logo -->
+				<div class="logo">
+					<a href="javascript:;">
+						
+					</a>
+				</div>
+
+				<!-- nav -->
+				<div class="nav">
+					<ul class="navUl">
+					<li class="">
+							<a href="{:url('index/index')}">首页</a>
+					</li>
+						{volist name="list" id="vo"}
+						<li class="">
+							<a href="{:url('index/'.$vo.htmlName,['id'=>$vo.id])}">{$vo.navName}</a>
+							{if condition="($vo.son!='')"}
+							<div class="subWraper down_2">
+								{volist name="$vo.son" id="vo2"}
+					            <dl class="">
+					                <dt><a  href="{:url('index/'.$vo2.htmlName,['id'=>$vo2.id])}">{$vo2.navName}</a></dt>
+									{if condition="($vo2.son!='')"}
+									<dd>
+									{volist name="$vo2.son" id="vo3"}
+									<a href="{:url('index/article',['pid'=>$vo3.id])}">{$vo3.navName}</a>    
+									{/volist}
+									</dd>
+									{/if}
+					            </dl>
+					            {/volist}
+        					</div>
+        					{/if} 
+						</li>
+						{/volist}	
+					</ul>
+				</div>
+			</div>
+		</div>

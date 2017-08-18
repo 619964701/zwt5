@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>竹文投首页</title>
+<style>
+ul,h2,dl,dt,dd{ padding:0; margin:0;}
+ul{ list-style:none;}
+h1{ text-align:center; font-weight:normal;}
+h2{ font-weight:normal;}
+a:link{ color:#333; text-decoration:none;}
+a:visited{ color:#333; text-decoration:none;}
+a:hover{ color:#3d6cd8; text-decoration:underline;}
+a:active{ color:#3d6cd8; text-decoration:underline;}
+
+.clearfix{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.nav_2{ width:955px; margin:0 auto; overflow:hidden;}
+.nav_2 li{ width:150px; float:left; text-align:center; margin-right:1px;}
+.nav_2 li h2{ width:150px; height:36px; line-height:36px; background:#3d6cd8; font-size:16px;}
+.nav_2 li h2 a{ display:block; text-decoration:none; color:#fff;}
+.nav_2 li h2 a:hover,.nav_2 li .nav_this_2 a{ background:#204db3;}
+.down_2{ 
+    position:absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background:red;
+    display: none;
+}
+.down_2 dt{ width:500px; height:36px; line-height:36px; background:#c4c5c7; margin-top:1px;
+display: inline;}
+.down_2 dd{ 
+    width:500px; 
+    height: 500px;
+}
+.down_2 dd a{ height:36px; line-height:36px; margin:1px;display: block;}
+
+
+.down_2 dl{
+    float: left;
+    width: 500px;
+}
+</style>
+</head>
+
+<body>
+
+
+<ul class="nav_2">
+{volist name="list" id="vo"}
+<li>
+	<h2><a href="">{$vo.navName}</a></h2>
+	{if condition="($vo.son!='')"}
+		<div class="down_2">
+		{volist name="$vo.son" id="vo2"}
+           <dl>
+           		{if condition="($vo2.son!='')"}
+               <dt>{$vo2.navName}</dt>
+               {else/}
+               <dt><a  href="">{$vo2.navName}</a></dt>
+               {/if}
+				{if condition="($vo2.son!='')"}
+				<dd>
+				{volist name="$vo2.son" id="vo3"}
+				<a href="">{$vo3.navName}</a>    
+				{/volist}
+				</dd>
+				{/if}
+           </dl>
+		{/volist}
+		</div>
+	{/if}	
+</li>
+{/volist}
+</ul>
+
+<script type="text/javascript" src="/static/index/js/jquery-1.11.0.min.js"></script>
+<script>
+$(".nav_2 li").mouseenter(function(){
+    $(this).children(".down_2").stop().slideDown("fast");
+    $(this).find("h2").addClass("nav_this_2");
+
+}).mouseleave(function(){
+    $(this).children(".down_2").stop().slideUp("fast");
+     $(this).find("h2").removeClass("nav_this_2");
+})
+</script>
+</body>
+</html>

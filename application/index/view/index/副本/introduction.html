@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta name="format-detection" content="telephone=no">
+    <title>竹文投资管理有限公司</title>
+    <link rel="stylesheet" type="text/css" href="/static/index/css/base.css"/>
+    <link rel="stylesheet" href="/static/index/css/instroduction.css">
+    <link rel="stylesheet" href="/static/index/css/footer.css">
+	<link rel="stylesheet" href="/static/index/css/header1.css">
+	<link rel="stylesheet" href="/static/index/css/page.css">
+   <style>
+    *{
+        padding:0;
+        margin:0;
+    }
+    a {
+	color: #333;
+	text-decoration:none;
+	cursor:pointer;
+    }
+.table{
+		text-align:center;
+		width:100%;
+	}
+   </style>
+</head>
+<body>
+<!-- 首页头部开始 -->
+	{include file="Public/top" /}
+	<!-- 首页头部结束-->
+	
+	<div id="container">
+        <img src="/static/index/img/2017.jpg" alt="" width="1903" id="banner_img">
+        
+    </div>
+  
+   
+    <div class="tabs">
+        <div class="box">
+            <div class="box-option">
+                <div class="option">
+                    <ul>
+                        {volist name="xiaonav" id="xiao"}
+	                    {if condition="($xiao.navEname==$navEname)"}
+	                	<li><a href="{:url('index/nav',['id'=>$xiao.id])}" class="current">{$xiao.navName}</a></li>
+	                	{else/}
+	                	<li><a href="{:url('index/nav',['id'=>$xiao.id])}">{$xiao.navName}</a></li>
+	                	{/if}
+	                	{/volist}
+	                    <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <ul>
+                	<li class="hover"> 
+                	{volist name="introduction" id="vo"}
+                	{if condition="($vo.nav_id==37)"}
+                	<div class="function function1 news">
+						<a href="{:url('index/article',['id'=>$vo.id])}" target="_blank"><img src="{$vo.img}" alt="" width="590" height="272"></a>
+						<div class="p">
+						<p><a href="{:url('index/article',['id'=>$vo.id])}" target="_blank">{$vo.title}</a></p>
+						</div>
+					</div>
+					{else/}
+                    {$vo.introtext}
+                    {/if}
+                    {/volist}
+                    <div class="clearfix"></div>
+                   </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    {$page}
+    <!-- 底部开始 -->
+	{include file="Public/footer" /}
+    <script src="/static/index/js/jquery-1.12.4.min.js"></script>
+    <!-- js  分页 -->
+<script type="text/javascript" src="/static/index/js/fenye.js"></script>	
+    
+
+<script>
+    $(document).ready(function(){
+        $(".a-t:eq(1)").css("color","#666");
+    });
+</script>
+</body>
+</html>
+
+

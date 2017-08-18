@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>后台管理</title>
+<link href="/static/homeback/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/themes/gray/easyui.css">
+<script type="text/javascript" src="/static/homeback/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/static/homeback/js/jquery.easyui.min.js"></script>
+<script src="/static/homeback/js/index.js"></script>
+<link rel="stylesheet" href="/static/homeback/css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/themes/icon.css">
+<link rel="stylesheet" href="/static/homeback/css/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--  <link rel="stylesheet" type="text/css" href="themes/gray/easyui.css">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script src="./js/index.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./themes/icon.css">
+<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+-->
+</head>
+	<!-- 左侧边栏开始 -->
+	{include file="Public/top" /}
+	<!-- 左侧边栏 结束-->
+	
+	<!-- 左侧边栏开始 -->
+	{include file="Public/sidebar" /}
+	<div id="mainPanle" region="center" border="true" border="false">
+		 <div id="tabs" class="easyui-tabs"  fit="true" border="false" >
+	                <div title="Home">
+				<div class="cs-home-remark">
+					<h1>欢迎管理员：{$nickname}  登录后台</h1> <br>			
+				</div>
+				</div>
+	        </div>
+	</div>
+</body>
+</html>

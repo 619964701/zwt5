@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>防伪码首页</title>
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/adminlist.css" />
+<meta name="description" content="Dashboard">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Basic Styles-->
+<style type="text/css">
+tr:hover{ 
+	background-color: #E8F2FE;
+}
+</style>
+</head>
+<body>
+<br>
+		<table  border ="1" cellspacing ="0" cellpadding="0" width="99%">
+			<tr style="height:30px;text-align:center;">
+           		<th>ID</th>
+           		<th>导航栏名称</th>
+           		<th>被访问的模板名称</th>
+           		<th>样式</th>
+           		<th>导航栏背景图</th>
+           		<th width="100px">导航栏描述</th>
+           		<th>父ID</th>
+           		<th>操作</th>
+	        </tr>
+	        
+	        {volist name="list[0]" id="vo"}
+	        <tr style="text-indent:30px;height:30px;">
+	        	<td>{$vo.id}</td>
+	        	<td style="color:#1BA800;">{$vo.navName}</td>
+	        	<td>{$vo.htmlName}</td>
+	        	<td style="color:#1BA800;">{$vo.cssName}</td>
+	        	<td>{$vo.img}</td>
+	        	<td>{$vo.desc}</td>
+	        	<td>{$vo.pid}</td>
+	        	<td>
+					<a href="{:url('nav/edit',['id' => $vo.id])}"><button type="button" style="height:32px;background-color:#DD1641;color:white;">改</button></a>
+					<button value="{$vo.id}" onclick="del(this.value);return false;" type="button" style="height:32px;background-color:#DD1641;color:white;">删</button>
+					<a href="{:url('nav/add',['id' => $vo.id])}" ><button type="button" style="height:32px;background-color:#DD1641;color:white;">增</button></a>
+				</td>
+			</tr>
+				{if condition="isset($list[$vo.id])"}
+				   {volist name="list[$vo.id]" id="vo2"}
+				  <tr style="text-indent:30px;height:30px;">
+		        	<td>{$vo2.id}</td>
+		        	<td style="text-indent:80px;">|- {$vo2.navName}</td>
+		        	<td>{$vo2.htmlName}</td>
+		        	<td style="text-indent:80px;">|- {$vo2.cssName}</td>
+		        	<td>{$vo2.img}</td>
+		        	<td>{$vo2.desc}</td>
+		        	<td>{$vo2.pid}</td>
+		        	<td>
+						<a href="{:url('nav/edit',['id' => $vo2.id])}"><button type="button" style="height:32px;background-color:#DD1641;color:white;">改</button></a>
+						<button value="{$vo2.id}" onclick="del(this.value);return false;" type="button" style="height:32px;background-color:#DD1641;color:white;">删</button>
+						<a href="{:url('nav/add',['id' => $vo2.id])}" ><button type="button" style="height:32px;background-color:#DD1641;color:white;">增</button></a>
+					</td>
+				</tr>
+							{if condition="isset($list[$vo2.id])"}
+							{volist name="list[$vo2.id]" id="vo3"}
+							<tr style="text-indent:30px;height:30px;">
+								<td>{$vo3.id}</td>
+								<td style="text-indent:130px;">|- {$vo3.navName}</td>
+								<td>{$vo3.htmlName}</td>
+								<td style="text-indent:130px;">|- {$vo3.cssName}</td>
+								<td>{$vo3.img}</td>
+								<td>{$vo3.desc}</td>
+								<td>{$vo3.pid}</td>
+								<td><a href="{:url('nav/edit',['id' => $vo3.id])}"><button type="button" style="height:32px;background-color:#DD1641;color:white;">改</button></a>
+						<button value="{$vo3.id}" onclick="del(this.value);return false;" type="button" style="height:32px;background-color:#DD1641;color:white;">删</button></td>
+							</tr>
+							{/volist}
+							{/if}
+				     {/volist}
+				{/if}
+			{/volist}
+		</table>
+<script type="text/javascript">
+function del(val){
+	if(window.confirm('请确认是否删除')){
+		window.location.href="{:url('nav/delete')}?id="+val;
+	}
+}
+</script>
+<script src="/static/homeback/js/jquerytime.js"></script>
+<script src="/static/homeback/js/jquery-1.12.4.min.js"></script>
+<script src="/static/homeback/js/jquery.datetimepicker.full.js"></script>
+</body>
+</html>

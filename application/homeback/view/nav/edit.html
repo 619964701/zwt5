@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加管理员</title>
+<script type="text/javascript" src="/static/homeback/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+   $("#submit").click(function(){
+    var cont = $("#adminFrom").serialize();
+	    $.ajax({
+		      url:"{:url('nav/edit')}",
+		      type:'post',
+		      dataType:'json',
+		      data:cont,
+		      success:function(data){
+		    	  if(data.flag=="成功"){
+		    		  alert('更改导航栏成功');
+		    		  window.location.href="{:url('nav/index')}";
+		    	  }else{
+		    		  $("#jsonp").html(data.txt);
+		    	  }
+		   	 }
+	  	});
+   });
+});
+</script>
+</head>
+<body>
+<span id="jsonp" style="color:red;">提示</span>
+<form id="adminFrom">
+<table  cellspacing ="0" cellpadding="0" width="300px" style="line-height:30px;">
+		<tr>
+			<td style="text-align:right;">导航栏名称:</td>
+			<td style="text-indent:15px;"><input type="text" name="navName" value="{$data.navName}"/></td>
+		</tr>	
+		<tr>
+			<td style="text-align:right;">样式:</td>
+			<td style="text-indent:15px;"><input type="text" name="cssName" value="{$data.cssName}"/></td>
+		</tr>	
+		<tr>
+			<td style="text-align:right;">被访问的模板名称:</td>
+			<td style="text-indent:15px;"><input type="text" name="htmlName" value="{$data.htmlName}"/></td>
+		</tr>	
+		<tr>
+			<td style="text-align:right;">导航栏描述:</td>
+			<td style="text-indent:15px;"><input type="text" name="desc" value="{$data.desc}"/></td>
+		</tr>
+		<tr>
+			<td style="text-align:right;">导航栏背景图路径:</td>
+			<td style="text-indent:15px;"><input type="text" name="img" value="{$data.img}"/></td>
+		</tr>	
+		<tr>
+			<td></td><td><input id="submit" size="25" type="button" value="提交"/></td>
+		</tr>			
+</table>
+<input type="hidden" name="id" value="{$data.id}"/>
+	</form>
+</body>
+</html>

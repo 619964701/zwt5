@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<meta name="format-detection" content="telephone=no">
+	<title>{$zhaopin.zhiwei}</title>
+	<link rel="stylesheet" type="text/css" href="/static/index/css/base.css"/>
+    <link rel="stylesheet" href="/static/index/css/footer.css">
+	<link rel="stylesheet" href="/static/index/css/header1.css">
+	<link rel="stylesheet" href="/static/index/css/instroduction.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/index/css/job.css"/>
+</head>
+<body>
+	<!-- 首页头部开始 -->
+	{include file="Public/top" /}
+	<img src="/static/index/img/join.jpg" alt="" width="100%">
+	<!-- 首页头部结束-->
+		<!--case----banner-->
+		<!--选项卡-->
+	<div class="tabs">
+        <div class="box">
+			<div class="box-option">
+				<div class="option">
+					<ul>
+						{volist name="xiaonav" id="xiao"}
+						{if condition="($xiao.navEname=='zhaopin')"}
+						<li><a href="{:url('index/nav',['id'=>$xiao.id])}" class="current">{$xiao.navName}</a></li>
+						{else/}
+						<li><a href="{:url('index/nav',['id'=>$xiao.id])}">{$xiao.navName}</a></li>
+						{/if}
+						{/volist}
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+			</div>
+             <h4 style="margin:50px">社会招聘</h4>
+             <!--电商客服-->
+           
+            <table class="tablelist" cellpadding="0" cellspacing="0">
+		    	<tbody><tr class="h">
+		    		<td colspan="3" class="ser" id="sharetitle">职位：{$zhaopin.zhiwei}</td>
+		    	</tr>
+		    	<tr class="c bottomline">
+		    		<td><span class="ser">工作地点：</span>
+		    		{$zhaopin.didian}	    		
+		    		</td>
+		    		<td><span class="lightblue">所属部门：</span>{$zhaopin.bumen}</td>
+		    		<td><span class="lightblue">招聘人数：</span>{$zhaopin.renshu}人</td>
+		    	</tr>
+          <tr class="c bottomline">
+		    		<td colspan="3">
+              <span class="ser">有效期：</span>
+                {$zhaopin.start} 至 {$zhaopin.end}
+            </td>
+		    	</tr>
+		    	<tr class="c">
+		    		<td colspan="3" class="ser">
+		    			{$zhaopin.introtext}
+                    </td>
+		    	</tr>
+		    	<tr class="c">
+                    <td style="text-indent:20px;" colspan="3">
+                        <h5>联系方式：</h5>
+                        <p>联系人：竹签文化行政人事主管 谭女士 </p>
+                        <p>简历投至：727000874@qq.com </p>
+                        <p>联系电话：021-69981183 </p>
+                        <p></p>
+                    </td>
+                </tr>
+		    	
+		    </tbody>
+            </table>
+        </div>
+	</div>
+		<!-- 底部开始 -->
+	    {include file="Public/footer" /}
+</body>
+<script src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".option li a:eq(1)").css("color","#666");
+    });
+    
+        
+       
+</script>
+</html>

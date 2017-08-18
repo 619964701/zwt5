@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+	
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+		<meta name="format-detection" content="telephone=no">
+		<title>竹文品牌管理（上海）有限公司</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/index/css/style.css"/>
+	</head>
+	<body>
+		{include file="Public/top" /}
+		<!-- banner -->
+		<div id="play" class="play_box clearfix">
+			<div class="imglist">
+				<a href="#" class="current">
+					<img src="/static/index/img/banner01.png" alt="">
+				</a>
+				<a href="#">
+					<img src="/static/index/img/banner02.png" alt="">
+				</a>
+				<a href="#">
+					<img src="/static/index/img/banner03.png" alt="">
+				</a>
+				
+			
+			</div>
+			<div class="iconlist clearfix">
+				<ul>
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+					
+					<div class="clearfix"></div>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 第二部分 -->
+		<div class="main">
+			<div class="main-box clearfix">
+				<div class="main-news">
+					<h3>
+						<a href="{:url('index/news',['id'=>38])}" class="more"></a>
+						<span>新闻中心</span>
+					</h3>
+					<dl class="newsdl clearfix">
+						<dt>
+							<em>{$ri}</em>
+							<span>{$ny}</span>
+						</dt>
+						<dd>
+							<h4 class="newstitle">
+								<a href="{:url('index/article',['id'=>$newest.id])}">{$newest.title}</a>
+							</h4>
+							<p class="newstext">
+								<a  href="{:url('index/article',['id'=>$newest.id])}"><em id="limitNum">{$newest.yinxu}</em>
+								<span>查看详情>></span>
+								</a>
+							</p>
+						</dd>
+						
+						<div class="clearfix"></div>
+					</dl>
+					<ul class="newslist">
+					{volist name="newslist" id="vo" key="k"}
+					{if condition="($k!=1)"}
+						<li><a href="{:url('index/article',['id'=>$vo.id])}"><span>{$vo.created}</span>{$vo.title}</a></li>
+					{/if}
+					{/volist}
+					</ul>
+				</div>
+				<!-- 图片 -->
+				<div class="main-middle">
+					<div class="mainCon">
+						<img src="/static/index/img/instru.png" alt="" class="img">
+					</div>
+					<div class="main-hover">
+						<ul class="hover-ul clearfix">
+							{volist name="jituan" id="vo" key="k"}
+							<li>
+								<a href="{:url('index/'.$vo.htmlName,['id'=>$vo.id])}">
+									<img src="/static/index/img/{$k+1}.png" alt="{$vo.navName}">
+									<p>{$vo.navName}</p>
+								</a>
+							</li>
+							{/volist}
+						</ul>
+					</div>
+
+				</div>
+				<div class="main-photo">
+					<img src="/static/index/img/idea.png" alt="">
+					<a href="{:url('index/introduction',['id'=>36])}" class="hot-hover">
+						<div class="hotCon">
+							<p class="text">创业为先</p>
+							<p class="text">优质融资</p>
+							<p class="text">多元化操作</p>
+							<p class="text">"内容+渠道+技术"战略</p>
+							<p class="more">
+								<span>了解详细</span>
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+
+
+		{include file="Public/footer" /}
+	
+	</body>
+	<script>
+ 
+    LimitNumber('{$newest.yinxu}','limitNum');
+    /*用js限制字数，超出部分以省略号...显示*/
+    function LimitNumber(txt,idName) {
+        var str = txt;
+        str = str.substr(0,40) + '...' ;
+        var id=document.getElementById(idName);
+        id.innerText=str;
+    }
+ 
+</script>
+	<script src="/static/index/js/jquery-1.12.4.min.js">
+	
+	</script>
+	<script src="/static/index/js/index.js"></script>
+</html>
+

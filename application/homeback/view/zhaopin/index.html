@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>招聘首页</title>
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/adminlist.css" />
+<meta name="description" content="Dashboard">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--Basic Styles-->
+</head>
+<body>
+
+<a href="{:url('zhaopin/add')}" >增加职位</a><br>
+		<table  border ="1" cellspacing ="0" cellpadding="0" width="99%">
+			<tr style="height:30px;text-align:center;">
+           		<th>职位ID</th>
+           		<th>职位名称</th>
+           		<th>所属部门</th>
+           		<th>工作地点</th>
+           		<th>招聘人数</th>
+           		<th>发布时间</th>
+           		<th>结束时间</th>
+           		<th>操作</th>
+	        </tr>
+	        
+	        {volist name="data" id="vo"}
+	        <tr style="text-align:center;height:30px;">
+	        	<td>{$vo.id}</td>
+	        	<td>{$vo.zhiwei}</td>
+	        	<td>{$vo.bumen}</td>
+	        	<td>{$vo.didian}</td>
+	        	<td>
+	        	{$vo.renshu}
+	        	</td>
+	        	<td>{$vo.start}</td>
+	        	<td>
+	        	{$vo.end}
+	        	</td>
+	        	<td>
+					<a href="{:url('zhaopin/edit',['id' => $vo.id])}"><button type="button" style="height:32px;background-color:#DD1641;color:white;">改</button></a>
+					<button value="{$vo.id}" onclick="del(this.value);return false;" type="button" style="height:32px;background-color:#DD1641;color:white;">删</button>
+				</td>
+			</tr>
+			{/volist}
+		</table>
+<script type="text/javascript">
+function del(val){
+	if(window.confirm('请确认是否删除')){
+		window.location.href="{:url('zhaopin/delete')}?id="+val;
+	}
+}
+</script>
+</body>
+</html>
