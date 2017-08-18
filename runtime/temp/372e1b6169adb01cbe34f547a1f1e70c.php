@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:71:"D:\wamp\www\zwt5\public/../application/homeback\view\article\index.html";i:1501819374;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:66:"E:\www\zwt5\public/../application/homeback\view\article\index.html";i:1502950349;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,7 +51,7 @@ function validate_form(thisform){
 	<option value="<?php echo url('article/index'); ?>">50</option>
 </select>
 选择第<select id="pageTop" onchange="changeYe(this);">
-			<?php $__FOR_START_14628__=1;$__FOR_END_14628__=$ye+1;for($i=$__FOR_START_14628__;$i < $__FOR_END_14628__;$i+=1){ ?>
+			<?php $__FOR_START_31283__=1;$__FOR_END_31283__=$ye+1;for($i=$__FOR_START_31283__;$i < $__FOR_END_31283__;$i+=1){ ?>
 			<option><?php echo $i; ?></option>
 			<?php } ?>
 		</select>页

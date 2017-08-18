@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\product.html";i:1502938275;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1502173957;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1502874012;}*/ ?>
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:61:"E:\www\zwt5\public/../application/index\view\index\brand.html";i:1502950349;s:60:"E:\www\zwt5\public/../application/index\view\Public\top.html";i:1502950349;s:63:"E:\www\zwt5\public/../application/index\view\Public\footer.html";i:1502950349;}*/ ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -10,42 +10,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 	<meta name="format-detection" content="telephone=no">
-	<title><?php echo $article['title']; ?></title>
-	 <link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
+    <title>旗下公司</title>
+    <link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
 	<link rel="stylesheet" type="text/css" href="/static/index/css/style.css"/>
 	<link rel="stylesheet" href="/static/index/css/science.css">
-	<link rel="stylesheet" href="/static/index/css/product.css">
-	<style>
-		.w1060 .img{
-			background: url("<?php echo $article['img']; ?>") no-repeat center center;
-			background-size: 65%;
-		}
-		
-		.jituan{
-			background:#a6272c;
-			color: #fff;
-		}
-		.tishi{
-		    text-align:center;
-			font-size:20px;
-		}
-		.fanhui {
-		    background: #a6272c none repeat scroll 0 0;
-		    color: #fff;
-		    display: inline-block;
-		    font-size: 16px;
-		    height: 42px;
-		    line-height: 42px;
-		    text-align: center;
-		    width: 140px;
-		}
-		.fanhui:hover{
-			color: #fff;
-		}	
-</style>
 </head>
 <body>
-	<!-- 首页头部开始 -->
+<!-- 首页头部开始 -->
 	<!-- 头部 -->
 		<div class="header-header">
 			<div class="header clearfix">
@@ -89,30 +60,51 @@
 		</div>
 	<!-- 首页头部结束-->
 	<div class="fBg"></div>
-	<?php if(($article!='')): ?>
 	<div class="page-container">
 		<div class="pageAbsout">
-	    	<a href="/" class="indexlogo"></a>
-	        <a href="">您所在的位置：</a> &gt;
-	        <a href="<?php echo url('index/index'); ?>">竹文投</a> &gt;  
-	        <a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
-	        <a href="<?php echo url('index/'.$twonav['htmlName'],['id'=>$twonav['id']]); ?>"><?php echo $twonav['navName']; ?></a> &gt;
-	        <a href="" class="cur"><?php echo $article['title']; ?></a>
+		<a href="/" class="indexlogo"></a>
+		<a href="">您所在的位置：</a> &gt; 
+		<a href="<?php echo url('index/index'); ?>">竹文投</a> &gt; 
+		<a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
+		<a class="cur" id="cur" href=""><?php echo $location; ?></a>
 		</div>
-			<?php echo $article['introtext']; ?>
-			
 	</div>
-	<?php else: ?>
-		<div>
-			<br />
-			<div class="tishi">内容待更新，敬请期待。。。<br /><br />
-			<p><a class="fanhui" href="#" onClick="javascript :history.back(-1);">返回</a></p></div>
-			<br />
+	<!-- 品牌部分 -->
+	<div class="science-brand">
+		<div class="page-brand">
+			<?php if(($location=='所有领域')): ?>
+			<div class="brand-option brand">
+			<?php else: ?>
+			<div class="brand-option">
+			<?php endif; ?>
+				<a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>">所有领域</a>
+			</div>
+			<?php if(is_array($twonav) || $twonav instanceof \think\Collection || $twonav instanceof \think\Paginator): $i = 0; $__LIST__ = $twonav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if(($location==$vo['navName'])): ?>
+			<div class="brand-option brand">
+			<?php else: ?>
+			<div class="brand-option">
+			<?php endif; ?>
+				<a href="<?php echo url('index/'.$vo['htmlName'],['id'=>$vo['id']]); ?>"><?php echo $vo['navName']; ?></a>
+			</div>
+			<?php endforeach; endif; else: echo "" ;endif; ?>
+			<!-- <img src="../img/partner.png" alt="" title="合作伙伴.png"> -->
 		</div>
-	<?php endif; ?>
-	
+		<div class="clearfix"></div>
+		<!-- 品牌 -->
+		<div class="card">
 			
-
+			<div class="page-brand-list  hover">
+				<?php if(is_array($sannav) || $sannav instanceof \think\Collection || $sannav instanceof \think\Paginator): $i = 0; $__LIST__ = $sannav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+				<div class="page-brand-item">
+					<div><br></div>
+					<div class="page-brand-logo" style="background: url(<?php echo $vo['img']; ?>) no-repeat center;" onclick="window.open('<?php echo url('index/article',['pid'=>$vo['id']]); ?>')"></div>
+					<div class="page-brand-more" onclick="window.open('<?php echo url('index/article',['pid'=>$vo['id']]); ?>')"></div>
+				</div>
+				<?php endforeach; endif; else: echo "" ;endif; ?>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
 	<!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	
@@ -145,12 +137,6 @@
 </body>
 <script src="/static/index/js/jquery-1.12.4.min.js"></script>
 <script src="/static/index/js/index.js"></script>
-<script>
-	$(".brand-option").click(function(){
-		var n = $(this).index();
-		console.log(n);
-		$(".brand-option").removeClass("brand").eq(n).addClass("brand");
-		$(".card .page-brand-list").removeClass('hover').eq(n).addClass('hover');
-	})
-</script>
+
 </html>
+

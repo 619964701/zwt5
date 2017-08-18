@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp\www\zwt5\public/../application/index\view\index\brand.html";i:1502876817;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1502173957;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1502874012;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"E:\www\zwt5\public/../application/index\view\index\introduction.html";i:1502950349;s:60:"E:\www\zwt5\public/../application/index\view\Public\top.html";i:1502950349;s:63:"E:\www\zwt5\public/../application/index\view\Public\footer.html";i:1502950349;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +10,11 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 	<meta name="format-detection" content="telephone=no">
-    <title>旗下公司</title>
+    <title>集团介绍</title>
     <link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
 	<link rel="stylesheet" type="text/css" href="/static/index/css/style.css"/>
-	<link rel="stylesheet" href="/static/index/css/science.css">
+	<link rel="stylesheet" href="/static/index/css/global.css">
+	<link rel="stylesheet" href="/static/index/css/idea.css">
 </head>
 <body>
 <!-- 首页头部开始 -->
@@ -66,46 +67,11 @@
 		<a href="">您所在的位置：</a> &gt; 
 		<a href="<?php echo url('index/index'); ?>">竹文投</a> &gt; 
 		<a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
-		<a class="cur" id="cur" href=""><?php echo $location; ?></a>
+		<a class="cur" href=""><?php echo $article['title']; ?></a>
 		</div>
+	<?php echo $article['introtext']; ?>
 	</div>
-	<!-- 品牌部分 -->
-	<div class="science-brand">
-		<div class="page-brand">
-			<?php if(($location=='所有领域')): ?>
-			<div class="brand-option brand">
-			<?php else: ?>
-			<div class="brand-option">
-			<?php endif; ?>
-				<a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>">所有领域</a>
-			</div>
-			<?php if(is_array($twonav) || $twonav instanceof \think\Collection || $twonav instanceof \think\Paginator): $i = 0; $__LIST__ = $twonav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if(($location==$vo['navName'])): ?>
-			<div class="brand-option brand">
-			<?php else: ?>
-			<div class="brand-option">
-			<?php endif; ?>
-				<a href="<?php echo url('index/'.$vo['htmlName'],['id'=>$vo['id']]); ?>"><?php echo $vo['navName']; ?></a>
-			</div>
-			<?php endforeach; endif; else: echo "" ;endif; ?>
-			<!-- <img src="../img/partner.png" alt="" title="合作伙伴.png"> -->
-		</div>
-		<div class="clearfix"></div>
-		<!-- 品牌 -->
-		<div class="card">
-			
-			<div class="page-brand-list  hover">
-				<?php if(is_array($sannav) || $sannav instanceof \think\Collection || $sannav instanceof \think\Paginator): $i = 0; $__LIST__ = $sannav;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-				<div class="page-brand-item">
-					<div><br></div>
-					<div class="page-brand-logo" style="background: url(<?php echo $vo['img']; ?>) no-repeat center;" onclick="window.open('<?php echo url('index/article',['pid'=>$vo['id']]); ?>')"></div>
-					<div class="page-brand-more" onclick="window.open('<?php echo url('index/article',['pid'=>$vo['id']]); ?>')"></div>
-				</div>
-				<?php endforeach; endif; else: echo "" ;endif; ?>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!-- 底部开始 -->
+    <!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	
 			<div class="footer-container clearfix">
@@ -132,11 +98,9 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	
-	
+    <script src="/static/index/js/jquery-1.12.4.min.js"></script>
+	<script src="/static/index/js/index.js"></script>
 </body>
-<script src="/static/index/js/jquery-1.12.4.min.js"></script>
-<script src="/static/index/js/index.js"></script>
-
 </html>
+
 

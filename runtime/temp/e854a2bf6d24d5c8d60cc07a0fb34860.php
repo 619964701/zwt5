@@ -1,8 +1,8 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:73:"D:\wamp\www\zwt5\public/../application/index\view\index\introduction.html";i:1502874946;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1502173957;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1502874012;}*/ ?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:63:"E:\www\zwt5\public/../application/index\view\index\article.html";i:1502950349;s:60:"E:\www\zwt5\public/../application/index\view\Public\top.html";i:1502950349;s:63:"E:\www\zwt5\public/../application/index\view\Public\footer.html";i:1502950349;}*/ ?>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -10,14 +10,42 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 	<meta name="format-detection" content="telephone=no">
-    <title>集团介绍</title>
-    <link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
+	<title><?php echo $article['title']; ?></title>
+	 <link rel="stylesheet" type="text/css" href="/static/index/css/base1.css"/>
 	<link rel="stylesheet" type="text/css" href="/static/index/css/style.css"/>
-	<link rel="stylesheet" href="/static/index/css/global.css">
-	<link rel="stylesheet" href="/static/index/css/idea.css">
+	<link rel="stylesheet" href="/static/index/css/science.css">
+	<link rel="stylesheet" href="/static/index/css/product.css">
+	<style>
+		.w1060 .img{
+			background: url("<?php echo $article['img']; ?>") no-repeat center center;
+			background-size: 65%;
+		}
+		
+		.jituan{
+			background:#a6272c;
+			color: #fff;
+		}
+		.tishi{
+		    text-align:center;
+			font-size:20px;
+		}
+		.fanhui {
+		    background: #a6272c none repeat scroll 0 0;
+		    color: #fff;
+		    display: inline-block;
+		    font-size: 16px;
+		    height: 42px;
+		    line-height: 42px;
+		    text-align: center;
+		    width: 140px;
+		}
+		.fanhui:hover{
+			color: #fff;
+		}	
+</style>
 </head>
 <body>
-<!-- 首页头部开始 -->
+	<!-- 首页头部开始 -->
 	<!-- 头部 -->
 		<div class="header-header">
 			<div class="header clearfix">
@@ -61,17 +89,32 @@
 		</div>
 	<!-- 首页头部结束-->
 	<div class="fBg"></div>
+	<?php if(($article!='')): ?>
 	<div class="page-container">
 		<div class="pageAbsout">
-		<a href="/" class="indexlogo"></a>
-		<a href="">您所在的位置：</a> &gt; 
-		<a href="<?php echo url('index/index'); ?>">竹文投</a> &gt; 
-		<a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
-		<a class="cur" href=""><?php echo $article['title']; ?></a>
+	    	<a href="/" class="indexlogo"></a>
+	        <a href="">您所在的位置：</a> &gt;
+	        <a href="<?php echo url('index/index'); ?>">竹文投</a> &gt;  
+	        <a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
+	        <a href="<?php echo url('index/'.$twonav['htmlName'],['id'=>$twonav['id']]); ?>"><?php echo $twonav['navName']; ?></a> &gt;
+	        <a href="" class="cur"><?php echo $article['title']; ?></a>
 		</div>
-	<?php echo $article['introtext']; ?>
+		<div>
+			<?php echo $article['introtext']; ?>
+		</div>
 	</div>
-    <!-- 底部开始 -->
+	<?php else: ?>
+		<div>
+			<br />
+			<div class="tishi">内容待更新，敬请期待。。。<br /><br />
+			<p><a class="fanhui" href="#" onClick="javascript :history.back(-1);">返回</a></p></div>
+			<br />
+		</div>
+	<?php endif; ?>
+	
+			
+
+	<!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	
 			<div class="footer-container clearfix">
@@ -98,9 +141,17 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
-    <script src="/static/index/js/jquery-1.12.4.min.js"></script>
-	<script src="/static/index/js/index.js"></script>
+	
+	
 </body>
+<script src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script src="/static/index/js/index.js"></script>
+<script>
+	$(".brand-option").click(function(){
+		var n = $(this).index();
+		console.log(n);
+		$(".brand-option").removeClass("brand").eq(n).addClass("brand");
+		$(".card .page-brand-list").removeClass('hover').eq(n).addClass('hover');
+	})
+</script>
 </html>
-
-

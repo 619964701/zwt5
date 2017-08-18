@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1502958012;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1502173957;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1502874012;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:60:"E:\www\zwt5\public/../application/index\view\index\item.html";i:1502950349;s:60:"E:\www\zwt5\public/../application/index\view\Public\top.html";i:1502950349;s:63:"E:\www\zwt5\public/../application/index\view\Public\footer.html";i:1502950349;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,63 +10,38 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <meta name="format-detection" content="telephone=no">
-<title>集团新闻</title>
+<title><?php echo $article['title']; ?></title>
 <link rel="stylesheet" href="/static/index/css/base1.css">
 <link rel="stylesheet" href="/static/index/css/style.css">
+<link rel="stylesheet" href="/static/index/css/item/<?php echo $twonav['cssName']; ?>/public.css">
+<link rel="stylesheet" href="/static/index/css/item/<?php echo $twonav['cssName']; ?>/<?php echo $sannav['cssName']; ?>.css">
 <style>
-.page-container{
-	width: 1060px;
-    margin: 0 auto;
-    /*margin-bottom: 50px;*/
-}
-.pageAbsout {
-    padding: 20px 0;
-    border-bottom: 1px solid #E8E8E8;
-}
-.pageAbsout a{
-	display: inline-block;
-}
-.indexlogo {
-    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
-    display: inline-block;
-    width: 21px;
-    height: 20px;
-    vertical-align: middle;
-}
-.pageAbsout .cur{
-	color: #a6272c;
-}
-.content{
-	margin-top:30px;
-}
-.wai{
-	border-top:1px solid #999;
-	padding:20px;
-	height:132px;
-}
-.nei1{
-	float:left;
-	width:20%;
-	height:130px;
-}
-.nei2{
-	height:130px;
-	margin-left:30px;
-	float:left;
-	width:70%;
-}
-.clearfix::after {
-    clear: both;
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
+	.jituan{
+		background:#a6272c;
+		color: #fff;
+	}
+	.tishi{
+	    text-align:center;
+		font-size:20px;
+	}
+	.fanhui {
+	    background: #a6272c none repeat scroll 0 0;
+	    color: #fff;
+	    display: inline-block;
+	    font-size: 16px;
+	    height: 42px;
+	    line-height: 42px;
+	    text-align: center;
+	    width: 140px;
+	}
+	.fanhui:hover{
+		color: #fff;
+	}	
 </style>
 </head>
 <body>
 <!-- 首页头部开始 -->
-	<!-- 头部 -->
+<!-- 头部 -->
 		<div class="header-header">
 			<div class="header clearfix">
 				<!-- logo -->
@@ -107,36 +82,35 @@
 				</div>
 			</div>
 		</div>
-	<!-- 首页头部结束-->
-	<img src="/static/index/img/contact.jpg" alt="" width="100%">
+<!-- 首页头部结束-->
+
+
+<!-- body -->
+	<img src="/static/index/img/item/<?php echo $twonav['cssName']; ?>/<?php echo $sannav['cssName']; ?>_images/banner.jpg" alt="" width="100%">
+	<?php if(($article!='')): ?>
 	<div class="page-container">
 		<div class="pageAbsout">
 	    	<a href="/" class="indexlogo"></a>
 	        <a href="">您所在的位置：</a>
 	        <a href="/">竹文投</a> &gt;  
 	        <a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
-	        <a href="" class="cur"><?php echo $twonav['navName']; ?></a>
+	        <a href="<?php echo url('index/'.$twonav['htmlName'],['id'=>$twonav['id']]); ?>"><?php echo $twonav['navName']; ?></a> &gt; 
+	        <a href="" class="cur"><?php echo $article['title']; ?></a>
 		</div>
-		<div class="content">
-			<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-			<div class="wai">
-				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
-				<div class="nei2">
-					<h3 style="text-align:left">
-						<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
-					</h3>
-					<p class="content-p">
-					<?php echo $vo['title']; ?>
-					<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>" style="font-weight:bold">>>查看详情</a>
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<?php endforeach; endif; else: echo "" ;endif; ?>
-		</div>
-		<div class="clearfix"></div>
+		<?php echo $article['introtext']; ?>
 	</div>
-	<br />
+	<?php else: ?>
+		<div>
+			<br />
+			<div class="tishi">内容待更新，敬请期待。。。<br /><br />
+			<p><a class="fanhui" href="#" onClick="javascript :history.back(-1);">返回</a></p></div>
+			<br />
+		</div>
+	<?php endif; ?>
+
+
+
+
 <!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	

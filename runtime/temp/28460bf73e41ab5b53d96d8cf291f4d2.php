@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:70:"D:\wamp\www\zwt5\public/../application/homeback\view\article\edit.html";i:1501745584;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"E:\www\zwt5\public/../application/homeback\view\article\edit.html";i:1502950349;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
