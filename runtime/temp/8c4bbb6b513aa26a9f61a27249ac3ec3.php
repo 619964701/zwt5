@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503028326;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503038465;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,9 +40,12 @@
 	margin-top:10px;
 }
 .wai{
-	border-bottom:1px solid #999;
+	border-bottom:1px solid #CDCDCD;
 	padding:20px;
 	height:132px;
+}
+.wai:hover{
+	background:#E8E8E8;
 }
 .nei1{
 	float:left;
@@ -122,11 +125,11 @@
 			<div class="wai">
 				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
 				<div class="nei2">
-					<h3 style="text-align:left">
+					<h3>
 						<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
 					</h3>
 					<p class="content-p">
-					<?php echo $vo['title']; ?>
+					<?php echo $vo['yinxu']; ?>
 					<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>" style="font-weight:bold">>>查看详情</a>
 					</p>
 				</div>
