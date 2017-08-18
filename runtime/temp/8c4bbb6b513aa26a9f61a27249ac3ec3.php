@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503038465;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503041394;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,21 +42,21 @@
 .wai{
 	border-bottom:1px solid #CDCDCD;
 	padding:20px;
-	height:132px;
+	height:200px;
 }
 .wai:hover{
 	background:#E8E8E8;
 }
 .nei1{
 	float:left;
-	width:20%;
-	height:130px;
+	width:340px;
+	height:200px;
 }
 .nei2{
-	height:130px;
+	height:200px;
 	margin-left:30px;
-	float:left;
-	width:70%;
+	float:right;
+	width:60%;
 }
 .clearfix::after {
     clear: both;
@@ -64,6 +64,31 @@
     display: block;
     height: 0;
     visibility: hidden;
+}
+.hh3{
+	margin-top:10px;
+}
+.content-p{
+	color:#666666;
+	margin-bottom:25px;
+	font-size: 12px;
+}
+.time{
+	font-family: Arial;
+	color:#666666;
+	margin-top:7px;
+	margin-bottom:15px;
+}
+.details{
+	border:1px solid #666666;
+	padding:5px 10px;
+	display:inline;
+}
+.details:hover{
+	background:#A6272C;
+	color:#FFFFFF;
+	border:1px solid #A6272C;
+	text-decoration:none;
 }
 </style>
 </head>
@@ -123,15 +148,16 @@
 		<div class="content">
 			<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 			<div class="wai">
-				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
+				<div class="nei1"><a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><img src="/static/index/img/test.jpg" width="335px" height="190px" alt=""  class="left" /></a></div>
 				<div class="nei2">
-					<h3>
+					<h3 class="hh3">
 						<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
 					</h3>
+					<p class="time"><?php echo $vo['created']; ?></p>
 					<p class="content-p">
 					<?php echo $vo['yinxu']; ?>
-					<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>" style="font-weight:bold">>>查看详情</a>
 					</p>
+					<a class="details" href="<?php echo url('index/article',['id'=>$vo['id']]); ?>">查看详情</a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
