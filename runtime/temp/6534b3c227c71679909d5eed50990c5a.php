@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503028326;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp\www\zwt5\public/../application/index\view\index\about.html";i:1503021190;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,59 +10,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <meta name="format-detection" content="telephone=no">
-<title>集团新闻</title>
+<title>联系我们</title>
 <link rel="stylesheet" href="/static/index/css/base1.css">
 <link rel="stylesheet" href="/static/index/css/style.css">
-<style>
-.page-container{
-	width: 1060px;
-    margin: 0 auto;
-    /*margin-bottom: 50px;*/
-}
-.pageAbsout {
-    padding: 20px 0;
-    border-bottom: 1px solid #E8E8E8;
-}
-.pageAbsout a{
-	display: inline-block;
-}
-.indexlogo {
-    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
-    display: inline-block;
-    width: 21px;
-    height: 20px;
-    vertical-align: middle;
-}
-.pageAbsout .cur{
-	color: #a6272c;
-}
-.content{
-	margin-top:10px;
-}
-.wai{
-	border-bottom:1px solid #999;
-	padding:20px;
-	height:132px;
-}
-.nei1{
-	float:left;
-	width:20%;
-	height:130px;
-}
-.nei2{
-	height:130px;
-	margin-left:30px;
-	float:left;
-	width:70%;
-}
-.clearfix::after {
-    clear: both;
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-</style>
+<link rel="stylesheet" href="/static/index/css/contact/public.css">
+<link rel="stylesheet" href="/static/index/css/contact/<?php echo $twonav['cssName']; ?>.css">
 </head>
 <body>
 <!-- 首页头部开始 -->
@@ -117,26 +69,11 @@
 	        <a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
 	        <a href="" class="cur"><?php echo $twonav['navName']; ?></a>
 		</div>
-		<div class="content">
-			<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-			<div class="wai">
-				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
-				<div class="nei2">
-					<h3 style="text-align:left">
-						<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
-					</h3>
-					<p class="content-p">
-					<?php echo $vo['title']; ?>
-					<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>" style="font-weight:bold">>>查看详情</a>
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<?php endforeach; endif; else: echo "" ;endif; ?>
-		</div>
-		<div class="clearfix"></div>
+		<?php echo $article['introtext']; ?>
+		
 	</div>
-	<br />
+
+
 <!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	
