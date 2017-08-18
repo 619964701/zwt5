@@ -155,7 +155,10 @@ class IndexController extends Controller{
                 }else {
                     $onenav = Db::name('nav')->where('id','=',$nav['pid'])->find();
                     $twonav = $nav;
+                    
                 }
+                $article = Db::name('article')->where('nav_id','=',$twonav['id'])->select();
+                $this->assign('article',$article);
                 $this->assign('onenav',$onenav);
                 $this->assign('twonav',$twonav);
                 return $this->fetch();
@@ -233,7 +236,7 @@ class IndexController extends Controller{
                 $this->error('请输入正确的要浏览信息！');
             }
         }else{
-            $this->error('请输入正确的要浏览信息！');
+            $this->error('请输入正确的要浏览信息!');
         }
     }
     ///招聘的 详情页

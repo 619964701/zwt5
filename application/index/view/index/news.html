@@ -77,59 +77,21 @@
 	        <a href="" class="cur">{$twonav.navName}</a>
 		</div>
 		<div class="content">
+			{volist name="article" id="vo"}
 			<div class="wai">
 				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
 				<div class="nei2">
 					<h3 style="text-align:left">
-						<a href="/index/index/article/id/42.html">G2A气囊大棚革新技术将变革中国农业生产领域</a>
+						<a href="{:url('index/article',['id'=>$vo.id])}">{$vo.title}</a>
 					</h3>
 					<p class="content-p">
-					习近平主席指出...成为可能。
-					<a href="/index/index/article/id/42.html" style="font-weight:bold">>>查看详情</a>
+					{$vo.title}
+					<a href="{:url('index/article',['id'=>$vo.id])}" style="font-weight:bold">>>查看详情</a>
 					</p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="wai">
-				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
-				<div class="nei2">
-					<h3 style="text-align:left">
-						<a href="/index/index/article/id/42.html">G2A气囊大棚革新技术将变革中国农业生产领域</a>
-					</h3>
-					<p class="content-p">
-					习近平主席指出...成为可能。
-					<a href="/index/index/article/id/42.html" style="font-weight:bold">>>查看详情</a>
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="wai">
-				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
-				<div class="nei2">
-					<h3 style="text-align:left">
-						<a href="/index/index/article/id/42.html">G2A气囊大棚革新技术将变革中国农业生产领域</a>
-					</h3>
-					<p class="content-p">
-					习近平主席指出...成为可能。
-					<a href="/index/index/article/id/42.html" style="font-weight:bold">>>查看详情</a>
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="wai">
-				<div class="nei1"><img src="/static/index/img/test.jpg" width="184px" height="126px" alt=""  class="left"></div>
-				<div class="nei2">
-					<h3 style="text-align:left">
-						<a href="/index/index/article/id/42.html">G2A气囊大棚革新技术将变革中国农业生产领域</a>
-					</h3>
-					<p class="content-p">
-					习近平主席指出...成为可能。
-					<a href="/index/index/article/id/42.html" style="font-weight:bold">>>查看详情</a>
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			
+			{/volist}
 		</div>
 		<div class="clearfix"></div>
 	</div>
