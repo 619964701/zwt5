@@ -1,245 +1,155 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503049777;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503297835;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>集团新闻</title>
 	<link rel="stylesheet" href="/static/index/css/base1.css">
-	<link rel="stylesheet" href="/static/index/css/css/style.css">
+	<link rel="stylesheet" href="/static/index/css/style.css">
 	<link rel="stylesheet" href="/static/index/css/details.css">
 	<style>
 	
+	.page-container{
+	width: 1060px;
+    margin: 0 auto;
+    /*margin-bottom: 50px;*/
+}
+.pageAbsout {
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.pageAbsout a{
+	display: inline-block;
+}
+.indexlogo {
+    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pageAbsout .cur{
+	color: #a6272c;
+}
+/*内容*/
+.commonDetailed {
+   
+    margin-top: 55px;
+}
+.commonDetailedtitle {
+    padding: 0 170px;
+}
+.commonDetailedtitle h3 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 32px;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+}
+.commonDetailedtitle .date {
+    text-align: center;
+    display: block;
+    color: #666;
+    font-size: 13px;
+}
+.commonDetailedContents {
+    padding: 30px 170px;
+    font-size: 16px;
+    line-height: 32px;
+    color: #1a1a1a;
+    text-indent: 32px;
+}
+.commonDetailedContents img {
+    display: block;
+    max-width: 100%;
+    width: 600px !important;
+    height: auto !important;
+    margin: 20px auto;
+}
+.commonDetailedContentsfoot {
+    padding-bottom: 65px;
+}
+.commonDetailedContentsfoot p.return {
+    text-align: center;
+    padding-bottom: 40px;
+}
+.commonDetailedContentsfoot p.return a {
+    display: inline-block;
+    background: #a6272c;
+    padding: 6px 34px;
+    color: #FFF;
+    font-size: 14px;
+}
+.commonDetailedContentsfoot dl {
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    padding: 13px 0px;
+}
+.commonDetailedContentsfoot dl dt {
+    float: left;
+}
+.commonDetailedContentsfoot dl a {
+    color: #666;
+}
+.commonDetailedContentsfoot dl span {
+    display: inline-block;
+   
+    color: #1a1a1a;
+    line-height: 27px;
+    padding: 0px 10px;
+    margin-right: 15px;
+}
+
+
 		
 	</style>
 </head>
 <body>
+	<!-- 首页头部开始 -->
 	<!-- 头部 -->
-	<div class="header-header">
-		<div class="header clearfix">
-			<!-- logo -->
-			<div class="logo">
-				<a href="javascript:;">
-					
-				</a>
-			</div>
+		<div class="header-header">
+			<div class="header clearfix">
+				<!-- logo -->
+				<div class="logo">
+					<a href="javascript:;">
+						
+					</a>
+				</div>
 
-
-			
-			<!-- nav -->
-			<div class="nav">
-				<ul class="navUl">
-					<li><a href="">首页</a></li>
-						<!-- 集团介绍 -->
+				<!-- nav -->
+				<div class="nav">
+					<ul class="navUl">
 					<li class="">
-						<a href="" class="jituan">集团介绍</a>
-						<div class="subWraper down_2">
-				            <dl class="">
-				                <dt><a href="javascript:;" style="color:#fff">集团概况</a></dt>
-				                
-				            </dl>
-				            <dl class="">
-				                <dt><a href="./instr-idea.html">经营理念</a></dt>
-				                
-				            	
-				            </dl>
-
-                  			<dl class="">
-				                <dt><a href="./instr-partner.html">合作伙伴</a></dt>
-				                
-				            </dl>
-    					</div> 
-					</li>	
-							
-                    <li class="">
-				    	<a href="">旗下公司</a>
-				        <div class="subWraper down_2">
-				        	<dl class="">
-				            	<dt><a href="">文化领域</a></dt>
-				                <dd>
-				                	<a href="/product/index/8">竹签文化传媒（上海）有限公司</a>
-	                    			<a href="/product/index/9">上海剧享影业有限公司 </a>
-			             			<a href="/product/index/10">竹石影视文化（上海）有限公司</a>
-			                		<a href="/product/index/11">桠梨动漫设计（上海）有限公司</a>
-			                		<a href="12.html">
-			                		芬子文化发展（上海）有限公司
-			                		</a>
-			                		<a href="">
-			                		杭州西钺网络科技有限公司
-			                		</a>                    
-				                </dd>
-				            </dl>
-				            <dl class="">
-				            	<dt><a href="./company/science.html">科技领域</a></dt>
-				                <dd>
-				                	<a href="/product/index/17">中海商瀛（北京）科技发展有限公司</a>
-			                    	<a href="/product/index/24">帝荟信息科技（上海）有限公司（筹）</a>                  
-				                </dd>
-				            </dl>
-				            <dl class="">
-				            	<dt><a href="">金融领域</a></dt>
-				               	<dd><a href="/product/index/37">广东先知资产管理有限公司</a></dd>
-				            </dl>           
-				        </div>             
-				    </li>
-					<!-- 集团项目 -->
-					<li>
-						<a href="">集团项目</a>
-				        <div class="subWraper down_2">
-				        	<dl>
-				            	<dt>
-				            		<a href="/product/menu/10">好莱坞系列</a>
-				            	</dt>
-				                <dd>
-				                	<a href="/product/index/8">《变形金刚5、6》</a>
-		                    		<a href="/product/index/9">《金蝉脱壳2、3》</a>
-				             		<a href="/product/index/10">《爆笑动物医院》</a>
-				                	<a href="/product/index/11">《异能战队》</a>                    
-				                </dd>
-				            </dl>
-				        	<dl >
-				            	<dt>
-				            		<a href="/product/menu/10">自有IP影视</a>
-				            	</dt>
-				                <dd>
-				                	<a href="/product/index/8">《斗战胜佛》</a>
-		                    		<a href="/product/index/9">《山海经》</a>
-				             		<a href="/product/index/10">《平行6㎡》</a>
-				                	<a href="/product/index/11">《回到昨天》</a>                    
-				                </dd>
-				            </dl>
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">手游系列</a>
-				            	</dt>
-				                <dd>
-				                	<a href="/product/index/17">《生化纪元》</a>
-			                    	<a href="/product/index/24">《鬼泣之城》</a>
-			                    	<a href="/product/index/24">《山海杀》</a>
-				                </dd>
-				            </dl>
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">高新科技产业</a>
-				            	</dt>
-				                <dd>
-				                	<a href="/product/index/17">G2A气囊大棚</a>
-			                    	<a href="/product/index/24">智能手机壳</a>
-			                    	
-				                </dd>
-				            </dl>
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">商业演出</a>
-				            	</dt>
-				                <dd>
-				                	<a href="#">2018项目表</a>
-				                	<a href="/product/index/17">2017温拿乐队演唱会</a>
-			                    	<a href="/product/index/24">2015初音未来演唱会</a>
-			                    	<a href="/product/index/24">谭咏麟银河40载巡演</a>
-			                    	<a href="/product/index/24">王力宏2014火力全开巡演</a>
-			                    	<a href="/product/index/24">张信哲长沙演唱会</a>
-			                    	<a href="/product/index/24">中国梦之声全国巡回演唱会</a>
-			                    	<a href="/product/index/24">SHE《2gether 4ever》演唱会</a>
-			                    	<a href="/product/index/24">左麟右李深圳演唱会</a>
-
-			                    	
-				                </dd>
-				            </dl>   
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">动漫产业</a>
-				            	</dt>
-				                <dd>
-				                	 <a href="/product/index/37">Animeidol动漫歌谣祭</a>
-				                	<a href="/product/index/12">《丸子魂》</a>
-				                	<a href="/product/index/12">《卡罗的心灵世界》</a>
-				                	<a href="/product/index/12">《《Wake Up Girls！》</a>
-			                    	
-				                </dd>
-				            </dl>   
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">综艺节目</a>
-				            	</dt>
-				                <dd>
-				                	<a href="/product/index/17">我是模特</a>
-			                    
-			                    	
-				                </dd>
-				            </dl>   
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">实体门店</a>
-				            	</dt>
-				                <dd>
-				                	<a href="/product/index/37">乐目奥赛射击文化馆</a>
-				                	<a href="/product/index/12">伊莱特女仆咖啡连锁</a>
-				                	<a href="/product/index/12">北京798剧场</a>
-			                    	
-				                </dd>
-				            </dl>   
-				            <dl>
-				            	<dt>
-				            		<a href="/product/menu/12">电子竞技</a>
-				            	</dt>
-				                <dd>
-				                	 <a href="/product/index/37">IESA国际电子竞技大赛</a>
-			                    	
-				                </dd>
-				            </dl>                   
-				        </div>    
+							<a href="<?php echo url('index/index'); ?>">首页</a>
 					</li>
-					<!-- 集团新闻 -->
-					<li class="">
-						<a href="">集团新闻</a>
-						<div class="subWraper down_2">
-				            <dl class="">
-				                <dt>
-				               		<a href="/product/menu/10">企业动态</a>
-				                </dt>
-				                
-				            </dl>
-				            <dl class="">
-				                <dt>
-				               		<a href="/product/menu/12">项目新闻</a>
-				                </dt>
-				                
-				            	
-				            </dl>
-
-                  			<dl class="">
-				                <dt><a href="./instruction/instr-idea.html">公益事业</a></dt>
-				                
-				            </dl>
-    					</div> 
-					</li>	
-					<!-- 联系我们 -->
-					<li class="">
-						<a href="">联系我们</a>
-						<div class="subWraper down_2">
-				            <dl class="">
-				                <dt>
-				               		<a href="/product/menu/10">联系方式</a>
-				                </dt>
-				                
-				            </dl>
-				            <dl class="">
-				                <dt>
-				               		<a href="/product/menu/12">招聘信息</a>
-				                </dt>
-				                
-				            	
-				            </dl>
-    					</div> 
-					</li>	
-				</ul>
+						<?php if(is_array($list) || $list instanceof \think\Collection || $list instanceof \think\Paginator): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+						<li class="">
+							<a href="<?php echo url('index/'.$vo['htmlName'],['id'=>$vo['id']]); ?>"><?php echo $vo['navName']; ?></a>
+							<?php if(($vo['son']!='')): ?>
+							<div class="subWraper down_2">
+								<?php if(is_array($vo['son']) || $vo['son'] instanceof \think\Collection || $vo['son'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?>
+					            <dl class="">
+					                <dt><a  href="<?php echo url('index/'.$vo2['htmlName'],['id'=>$vo2['id']]); ?>"><?php echo $vo2['navName']; ?></a></dt>
+									<?php if(($vo2['son']!='')): ?>
+									<dd>
+									<?php if(is_array($vo2['son']) || $vo2['son'] instanceof \think\Collection || $vo2['son'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo2['son'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo3): $mod = ($i % 2 );++$i;?>
+									<a href="<?php echo url('index/article',['pid'=>$vo3['id']]); ?>"><?php echo $vo3['navName']; ?></a>    
+									<?php endforeach; endif; else: echo "" ;endif; ?>
+									</dd>
+									<?php endif; ?>
+					            </dl>
+					            <?php endforeach; endif; else: echo "" ;endif; ?>
+        					</div>
+        					<?php endif; ?> 
+						</li>
+						<?php endforeach; endif; else: echo "" ;endif; ?>	
+					</ul>
+				</div>
 			</div>
-			<!-- <div class="clearfix"></div> -->
 		</div>
-	</div>
-	
-
-
+	<!-- 首页头部结束-->
 
 	<div class="fBg"></div>
 	<div class="page-container">
@@ -334,10 +244,11 @@
 	
 	
 </body>
-</html>
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/index.js"></script>
+<script src="/static/index/js/jquery-1.12.4.min.js"></script>
+<script src="/static/index/js/index.js"></script>
 <script>
 	// $(".down_2:first").css("display","block");
 
 </script>
+</html>
+

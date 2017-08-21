@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:60:"E:\www\zwt5\public/../application/index\view\index\item.html";i:1502950349;s:60:"E:\www\zwt5\public/../application/index\view\Public\top.html";i:1502950349;s:63:"E:\www\zwt5\public/../application/index\view\Public\footer.html";i:1502950349;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\shezhao.html";i:1503021190;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,38 +10,15 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <meta name="format-detection" content="telephone=no">
-<title><?php echo $article['title']; ?></title>
+<title>社会招聘</title>
 <link rel="stylesheet" href="/static/index/css/base1.css">
 <link rel="stylesheet" href="/static/index/css/style.css">
-<link rel="stylesheet" href="/static/index/css/item/<?php echo $twonav['cssName']; ?>/public.css">
-<link rel="stylesheet" href="/static/index/css/item/<?php echo $twonav['cssName']; ?>/<?php echo $sannav['cssName']; ?>.css">
-<style>
-	.jituan{
-		background:#a6272c;
-		color: #fff;
-	}
-	.tishi{
-	    text-align:center;
-		font-size:20px;
-	}
-	.fanhui {
-	    background: #a6272c none repeat scroll 0 0;
-	    color: #fff;
-	    display: inline-block;
-	    font-size: 16px;
-	    height: 42px;
-	    line-height: 42px;
-	    text-align: center;
-	    width: 140px;
-	}
-	.fanhui:hover{
-		color: #fff;
-	}	
-</style>
+<link rel="stylesheet" href="/static/index/css/contact/public.css">
+<link rel="stylesheet" href="/static/index/css/contact/job.css">
 </head>
 <body>
 <!-- 首页头部开始 -->
-<!-- 头部 -->
+	<!-- 头部 -->
 		<div class="header-header">
 			<div class="header clearfix">
 				<!-- logo -->
@@ -82,34 +59,66 @@
 				</div>
 			</div>
 		</div>
-<!-- 首页头部结束-->
-
-
-<!-- body -->
-	<img src="/static/index/img/item/<?php echo $twonav['cssName']; ?>/<?php echo $sannav['cssName']; ?>_images/banner.jpg" alt="" width="100%">
-	<?php if(($article!='')): ?>
+	<!-- 首页头部结束-->
+	<img src="/static/index/img/contact.jpg" alt="" width="100%">
 	<div class="page-container">
 		<div class="pageAbsout">
 	    	<a href="/" class="indexlogo"></a>
 	        <a href="">您所在的位置：</a>
 	        <a href="/">竹文投</a> &gt;  
-	        <a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
-	        <a href="<?php echo url('index/'.$twonav['htmlName'],['id'=>$twonav['id']]); ?>"><?php echo $twonav['navName']; ?></a> &gt; 
-	        <a href="" class="cur"><?php echo $article['title']; ?></a>
+	        <a href="<?php echo url('index/about',['id'=>42]); ?>">联系我们</a> &gt; 
+	        <a href="" class="cur">社会招聘</a>
 		</div>
-		<?php echo $article['introtext']; ?>
+		
 	</div>
-	<?php else: ?>
-		<div>
-			<br />
-			<div class="tishi">内容待更新，敬请期待。。。<br /><br />
-			<p><a class="fanhui" href="#" onClick="javascript :history.back(-1);">返回</a></p></div>
-			<br />
-		</div>
-	<?php endif; ?>
-
-
-
+<div class="tabs">
+        <div class="box">
+          <div class="box-option">
+              <div class="option">
+                  <ul>
+                      <li><a href="<?php echo url('index/about',['id'=>44]); ?>">招聘公告</a></li>
+                      <li><a href="" class="current">社会招聘</a></li>
+                      <li><a href="/index/index/faq">招聘FAQ</a></li>
+                        <div class="clearfix"></div>
+                  </ul>
+              </div>
+          </div>
+            <div class="clearfix"></div>
+            <!-- 选项卡内容 -->
+            <div class="card">
+                <ul>
+                  <li class="hover"> 
+                  <p class="notice">社会招聘</p>
+                  <table>
+                    <thead>
+                        <tr>
+                            <th>职位名称</th>
+                            <th>职业类别</th>
+                            <th>人数</th>
+                            <th>工作地点</th>
+                            <th>发布时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    	<?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                    	<tr class="zhaopin">
+	                       <td>
+	                         <a href="<?php echo url('index/zhaopin',['id'=>$vo['id']]); ?>"><?php echo $vo['zhiwei']; ?></a>
+	                       </td>
+	                       <td><?php echo $vo['bumen']; ?></td>
+	                       <td><?php echo $vo['renshu']; ?></td>
+	                       <td><?php echo $vo['didian']; ?></td>
+	                       <td><?php echo $vo['start']; ?></td>
+                    	</tr>
+                    	<?php endforeach; endif; else: echo "" ;endif; ?>
+                    </tbody>
+                  </table>
+                  <div class="clearfix"></div>
+                   </li> 
+                </ul>
+            </div>
+         </div>
+     </div>
 
 <!-- 底部开始 -->
 	<!-- footer -->

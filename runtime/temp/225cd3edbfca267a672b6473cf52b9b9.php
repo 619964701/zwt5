@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:65:"E:\www\zwt5\public/../application/homeback\view\article\edit.html";i:1502950349;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:69:"D:\wamp\www\zwt5\public/../application/homeback\view\article\add.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,6 +41,16 @@ function validate_form(thisform){
 				alert("请选择完整的文章分类！");navid.focus();return false
 			}
 		}
+	  //var cityindex = document.getElementById("city").selectedIndex;
+	  //var citytext = document.getElementById("city").options[cityindex].text;
+	  //var index = document.getElementById("fenlei").selectedIndex;
+	  //var text = document.getElementById("fenlei").options[index].text;
+	  //if(citytext=="集团新闻"&&text=="请选择"){
+		//  alert("请选择新闻分类！");fenlei.focus();return false
+	  //}
+	  //if(citytext!="集团新闻"&&text!="请选择"){
+		//  alert("新闻分类不可选择！");fenlei.focus();return false
+	  //}
 	  if (validate_required(title,"文章标题必填!")==false){
 		  title.focus();return false
 	  }
@@ -61,79 +71,52 @@ function validate_form(thisform){
 </head>
 <body>
 （带 <span class="span">*</span> 为必填项）
-<form action="<?php echo url('article/update',['id'=>$article['id']]); ?>" enctype="multipart/form-data" method="post" onsubmit="return validate_form(this);">
+<form action="<?php echo url('article/add'); ?>" enctype="multipart/form-data" method="post" onsubmit="return validate_form(this);">
 <table  border="1" cellspacing ="0" cellpadding="0" width="90%" style="line-height:30px;">
 		<tr>
 			<td style="text-align:right;"><span class="span">*</span>选择文章分类：</td>
 			<td style="text-indent:15px;">
-				<?php if(($zuxian=='')): ?>
-					<select id="province">
-						<option value ="<?php echo $danav['id']; ?>"><?php echo $danav['navName']; ?></option>
-					 	<?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-					    <option value ="<?php echo $vo['id']; ?>"><?php echo $vo['navName']; ?></option>
-					    <?php endforeach; endif; else: echo "" ;endif; ?>
-					 </select>
-					 <select id="city" name="navid">
-					    <option value ="<?php echo $xiaonav['id']; ?>"><?php echo $xiaonav['navName']; ?></option>
-					 </select>
-					 <select id="county" name="countyid">
-					    <option>请选择</option>
-					 </select>
-					 <input type="hidden" value ="<?php echo $danav['id']; ?>" name="hiddencity" />
-					 <input type="hidden" value ="<?php echo $xiaonav['id']; ?>" name="hiddencounty" />
-				 <?php else: ?>
-					 <select id="province">
-						<option value ="<?php echo $zuxian['id']; ?>"><?php echo $zuxian['navName']; ?></option>
-					 	<?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-					    <option value ="<?php echo $vo['id']; ?>"><?php echo $vo['navName']; ?></option>
-					    <?php endforeach; endif; else: echo "" ;endif; ?>
-					 </select>
-					 <select id="city" name="navid">
-					    <option value ="<?php echo $danav['id']; ?>"><?php echo $danav['navName']; ?></option>
-					 </select>
-					 <select id="county" name="countyid">
-					    <option value ="<?php echo $xiaonav['id']; ?>"><?php echo $xiaonav['navName']; ?></option>
-					 </select>
-					 <input type="hidden" value ="<?php echo $zuxian['id']; ?>" name="hiddenprovince" />
-					 <input type="hidden" value ="<?php echo $danav['id']; ?>" name="hiddencity" />
-					 <input type="hidden" value ="<?php echo $xiaonav['id']; ?>" name="hiddencounty" />
-				 <?php endif; ?>
+				<select id="province">
+					<option>请选择</option>
+				 	<?php if(is_array($data) || $data instanceof \think\Collection || $data instanceof \think\Paginator): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+				    <option value ="<?php echo $vo['id']; ?>"><?php echo $vo['navName']; ?></option>
+				    <?php endforeach; endif; else: echo "" ;endif; ?>
+				 </select>
+				 <select id="city" name="navid">
+				    <option>请选择</option>
+				 </select>
+				 <select id="county" name="countyid">
+				    <option>请选择</option>
+				 </select>
 			</td>
 		</tr>	
 		<tr>
 			<td style="text-align:right;"><span class="span">*</span>文章标题：</td>
-			<td style="text-indent:15px;"><input type="text" name="title" value="<?php echo $article['title']; ?>"/></td>
+			<td style="text-indent:15px;"><input type="text" name="title"/></td>
 		</tr>	
 		<tr>
 			<td style="text-align:right;"><span class="span">*</span>文章别名：</td>
-			<td style="text-indent:15px;"><input type="text" name="title_alias" value="<?php echo $article['title_alias']; ?>"/></td>
-		</tr>
+			<td style="text-indent:15px;"><input type="text" name="title_alias"/></td>
+		</tr>	
 		<tr>
 			<td style="text-align:right;">文章短介绍：</td>
-			<td style="text-indent:15px;"><textarea  name="yinxu" width="300" height="180"><?php echo $article['yinxu']; ?></textarea></td>
-		</tr>		
+			<td style="text-indent:15px;"><textarea  name="yinxu" width="300" height="180"></textarea></td>
+		</tr>
 		<tr>
 			<td style="text-align:right;">文章图片缩略图：</td>
 			<td style="text-indent:15px;"><input id="doc" type="file" name="img" onchange="javascript:setImagePreview();"/></td>
 		</tr>	
 		<tr>
 			<td style="text-align:right;">显示缩略图：</td>
-			<td style="text-indent:15px;">
-			
-			<?php if(($article['img'] == '暂无缩略图')): ?>
-			暂无缩略图
-	        <?php else: ?>
-			<img id="preview" src="<?php echo $article['img']; ?>" width="150" height="180" style="display: block; width: 150px; height: 180px;"/>
-			<?php endif; ?>
-			</td>
+			<td style="text-indent:15px;"><img id="preview"  width="150" height="180" style="display: block; width: 150px; height: 180px;"/></td>
 		</tr>
 		<tr>
 			<td style="text-align:right;"><span class="span">*</span>文章内容：</td>
-			<td style="text-indent:15px;"><textarea id="a1" name="introtext" ><?php echo $article['introtext']; ?></textarea></td>
+			<td style="text-indent:15px;"><textarea id="a1" name="introtext"></textarea></td>
 		</tr>
 		<tr>
 			<td style="text-align:right;"><span class="span">*</span>文章作者：</td>
-			<td style="text-indent:15px;"><input type="text" name="created_by" value="<?php echo $article['created_by']; ?>"/></td>
+			<td style="text-indent:15px;"><input type="text" name="created_by"/></td>
 		</tr>	
 		<tr>
 			<td></td><td><input  size="25" type="submit" value="提交"/></td>
@@ -142,10 +125,10 @@ function validate_form(thisform){
 </form>
 <script type="text/javascript">
 		function onloadCk(){
+			var city = document.getElementById("city");
+			city.style.display = "none";
 			var county = document.getElementById("county");
-			if(county.value=="请选择"){
-				county.style.display = "none";
-			}
+			county.style.display = "none";
 			//CKEDITOR.Width="400px";
 			CKEDITOR.replace("a1",{width: '900px',  height: '300px' });			
 		}
@@ -233,6 +216,15 @@ function setImagePreview(avalue) {
                         	//alert(obj[i]['navName']);
                         }
                     }
+                    //var cities = data;
+                    // data是字符串,转换为数组
+                    //var cities = data.split(",");
+                    //for(var i=0;i<cities.length;i++){
+                    //    var option = document.createElement("option");
+                    //    var textNode = document.createTextNode(cities[i]);
+                    //    option.appendChild(textNode);
+                    //    city.appendChild(option);
+                    //}
                 }
             }
         }else{
@@ -291,11 +283,21 @@ function setImagePreview(avalue) {
 	                    	//alert(obj[i]['navName']);
 	                    }
                     }
+                    //var cities = data;
+                    // data是字符串,转换为数组
+                    //var cities = data.split(",");
+                    //for(var i=0;i<cities.length;i++){
+                    //    var option = document.createElement("option");
+                    //    var textNode = document.createTextNode(cities[i]);
+                    //    option.appendChild(textNode);
+                    //    city.appendChild(option);
+                    //}
                 }
             }
         }else{
         	county.style.display = "none";
         }
+        
     };
     // 定义获取ajax核心对象的函数XMLHttpRequest对象的函数
     function getXhr(){
@@ -308,5 +310,7 @@ function setImagePreview(avalue) {
         return xhr;
     }
   </script>
+  
+  
 </body>
 </html>
