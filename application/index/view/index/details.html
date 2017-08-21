@@ -109,59 +109,38 @@
 	<!-- 首页头部开始 -->
 	{include file="Public/top" /}
 	<!-- 首页头部结束-->
-
+	<img src="/static/index/img/news.jpg" alt="" width="100%">
 	<div class="fBg"></div>
 	<div class="page-container">
 		<div class="pageAbsout">
 	    	<a href="/" class="indexlogo"></a>
 	        <a href="/About/index.html">您所在的位置：</a> &gt;
-	        <a href="/About/Brand/index.html">竹文投</a> &gt;  
-	        <a href="/About/Brand/index.html">集团新闻</a> &gt; 
-	        <a href="/About/Brand/index.html" class="cur">xxxxx</a>
+	        <a href="/">竹文投</a> &gt;  
+	        <a href="{:url('index/'.$onenav.htmlName,['id'=>$onenav.id])}">{$onenav.navName}</a> &gt; 
+	        <a href="{:url('index/'.$twonav.htmlName,['id'=>$twonav.id])}">{$twonav.navName}</a> &gt; 
+	        <a href="" class="cur">{$article.title}</a>
 		</div>
 
 
 		<div class="commonDetailed">
             <div class="commonDetailedtitle">
-                <h3>正中集团首部品牌微电影《行走的梦想家》5月20日首映</h3>
-                <p class="date">发布日期：2017-05-23</p>
+                <h3>{$article.title}</h3>
+                <p class="date">发布日期：{$article.created}</p>
 
             </div>
 
             <div class="commonDetailedContents">
-                <p>
-                	<span>5月20日，由正中集团出品的首部微电影《行走的梦想家》在科兴科学园国际会议中心举办首映礼，正中集团高层领导、集团总部全体员工、下属公司主管级及以上人员、基层员工代表以及本片剧组人员共约500人参加了活动。</span>
-                </p>
-                <p>
-
-                	<img src="./images/1.jpg" title="056A0763a_meitu_5.jpg" alt="056A0763a_meitu_5.jpg">
-                </p>
-                <p>
-                	
-                	<span>首映礼上礼花绽放，正中集团高层共同为《行走的梦想家》完成点映仪式。随后，微电影正式放映。影片中三位主人公的故事交映在观众眼前，真实的故事引起了现场的共鸣，员工纷纷表示深受感动。剧组访谈环节更是让员工了解到了微电影制作的幕后故事，剧组人员分享的点滴感悟也感染了现场观众。首映礼在温馨感动的氛围中落下帷幕。</span>
-                </p>
-               <img src="./images/2.jpg" title="ZE9A9535a.jpg" alt="ZE9A9535a.jpg">
-                <p>
-                	
-                	
-                	<span>正中集团首部微电影《行走的梦想家》根据正中人真实故事改编，通过讲述三位主人公在各自岗位上克服困难、实现价值的故事，体现了正中人身上特有的踏实肯干、追求极致、开放创新的特质。筹拍微电影《行走的梦想家》的过程，也促使全体正中人不断去思考“正中特质是什么”，未来能够引领正中持续的成功的因素有哪些。</span>
-                </p>
-               
-
-                <p>
-                	<img src="./images/3.jpg" title="056A0790a.jpg" alt="056A0790a.jpg">
-                	
-                </p>
-                <p>
-                	<span>首映礼过后，正中集团总裁邓学勤发表了“我应该是谁”的主题演讲。他指出，“我应该是谁”是思考“正中应该是什么样的”、“正中特质是什么”的系列课题，而探索并打造“正中特质”则是为了进一步归纳、提炼过去企业成功的逻辑，并在未来引导公司战略更好落地。邓学勤表示，打造正中特质是今年集团的四大核心任务之一，目前而言正中特质仍是一个开放命题，并未形成定论，全体员工需要不断思考、学习和探讨，才能提炼总结出真正的正中特质。过去，正中人身上也体现出许多诸如 “想做事”、“会做事”、“能成事”等的美好品质，未来还需要进一步挖掘、打造最核心最优秀的品质，才能保证企业永葆生机、持续成功，为社会创造源源不断的价值。</span>
-                </p>
-               
+            	{$article.introtext}	
             </div>
             <div class="commonDetailedContentsfoot">
-                <p class="return"><a href="/News/index.html">返回</a></p>
+                <p class="return"><a href="{:url('index/'.$twonav.htmlName,['id'=>$twonav.id])}">返回</a></p>
              
                 <dl class="clearfix">
                     <dt>
+                        <a href="/News/271.html">
+                        	<span>上一条</span>“惠生活 慧办公 汇生态”——正中会APP内测启动会成功召开
+                        </a>
+                       	<br/>
                         <a href="/News/271.html">
                         	<span>下一条</span>“惠生活 慧办公 汇生态”——正中会APP内测启动会成功召开
                         </a>

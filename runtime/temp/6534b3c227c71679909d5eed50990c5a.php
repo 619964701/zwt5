@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503306541;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp\www\zwt5\public/../application/index\view\index\about.html";i:1503021190;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,87 +10,11 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <meta name="format-detection" content="telephone=no">
-<title>集团新闻</title>
+<title>联系我们</title>
 <link rel="stylesheet" href="/static/index/css/base1.css">
 <link rel="stylesheet" href="/static/index/css/style.css">
-<style>
-.page-container{
-	width: 1060px;
-    margin: 0 auto;
-    /*margin-bottom: 50px;*/
-}
-.pageAbsout {
-    padding: 20px 0;
-    border-bottom: 1px solid #E8E8E8;
-}
-.pageAbsout a{
-	display: inline-block;
-}
-.indexlogo {
-    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
-    display: inline-block;
-    width: 21px;
-    height: 20px;
-    vertical-align: middle;
-}
-.pageAbsout .cur{
-	color: #a6272c;
-}
-.content{
-	margin-top:10px;
-}
-.wai{
-	border-bottom:1px solid #CDCDCD;
-	padding:20px;
-	height:200px;
-}
-.wai:hover{
-	background:#E4FBF7;
-}
-.nei1{
-	float:left;
-	width:340px;
-	height:200px;
-}
-.nei2{
-	height:200px;
-	margin-left:30px;
-	float:right;
-	width:60%;
-}
-.clearfix::after {
-    clear: both;
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
-.hh3{
-	margin-top:10px;
-}
-.content-p{
-	color:#666666;
-	margin-bottom:25px;
-	font-size: 12px;
-}
-.time{
-	font-family: Arial;
-	color:#666666;
-	margin-top:7px;
-	margin-bottom:15px;
-}
-.details{
-	border:1px solid #666666;
-	padding:5px 10px;
-	display:inline;
-}
-.details:hover{
-	background:#A6272C;
-	color:#FFFFFF;
-	border:1px solid #A6272C;
-	text-decoration:none;
-}
-</style>
+<link rel="stylesheet" href="/static/index/css/contact/public.css">
+<link rel="stylesheet" href="/static/index/css/contact/<?php echo $twonav['cssName']; ?>.css">
 </head>
 <body>
 <!-- 首页头部开始 -->
@@ -136,7 +60,7 @@
 			</div>
 		</div>
 	<!-- 首页头部结束-->
-	<img src="/static/index/img/news.jpg" alt="" width="100%">
+	<img src="/static/index/img/contact.jpg" alt="" width="100%">
 	<div class="page-container">
 		<div class="pageAbsout">
 	    	<a href="/" class="indexlogo"></a>
@@ -145,27 +69,11 @@
 	        <a href="<?php echo url('index/'.$onenav['htmlName'],['id'=>$onenav['id']]); ?>"><?php echo $onenav['navName']; ?></a> &gt; 
 	        <a href="" class="cur"><?php echo $twonav['navName']; ?></a>
 		</div>
-		<div class="content">
-			<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-			<div class="wai">
-				<div class="nei1"><a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><img src="/static/index/img/test.jpg" width="335px" height="190px" alt=""  class="left" /></a></div>
-				<div class="nei2">
-					<h3 class="hh3">
-						<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
-					</h3>
-					<p class="time"><?php echo $vo['created']; ?></p>
-					<p class="content-p">
-					<?php echo $vo['yinxu']; ?>
-					</p>
-					<a class="details" href="<?php echo url('index/article',['id'=>$vo['id']]); ?>">查看详情</a>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<?php endforeach; endif; else: echo "" ;endif; ?>
-		</div>
-		<div class="clearfix"></div>
+		<?php echo $article['introtext']; ?>
+		
 	</div>
-	<br />
+
+
 <!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	
@@ -197,7 +105,7 @@
 <script src="/static/index/js/jquery-1.12.4.min.js"></script>
 <script src="/static/index/js/index.js"></script>
 <script>
-	
+	$(".down_2:nth-").css("display","block");
 
 </script>
 </html>
