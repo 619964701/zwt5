@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503049777;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -231,7 +231,7 @@ class IndexController extends Controller{
                 $this->assign('onenav',$onenav);
                 $this->assign('twonav',$twonav);
                 $this->assign('article',$article);
-                return $this->fetch();
+                return $this->fetch('details');
             }else{
                 $this->error('请输入正确的要浏览信息！');
             }
