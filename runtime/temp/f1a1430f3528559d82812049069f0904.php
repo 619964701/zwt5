@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503305001;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503306928;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -101,7 +101,10 @@
     padding: 0px 10px;
     margin-right: 15px;
 }
-
+.commonDetailedContentsfoot dl dd {
+    float: right;
+}
+	
 
 		
 	</style>
@@ -186,6 +189,11 @@
                         	<span>下一条</span>“惠生活 慧办公 汇生态”——正中会APP内测启动会成功召开
                         </a>
                     </dt>
+			  <dd>
+                    	<a href="/News/271.html">
+                        	<span>上一条</span>123
+                        </a>
+                    </dd>
                 </dl>
             </div>
         </div>
