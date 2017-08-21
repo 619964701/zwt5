@@ -26604,3 +26604,832 @@
 [ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 86 LIMIT 1 [ RunTime:0.000442s ]
 
 ---------------------------------------------------------------
+[ 2017-08-21T17:40:22+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/article/pid/88.html
+[ log ] 10.0.0.171/index/index/article/pid/88.html [运行时间：0.060060s][吞吐率：16.65req/s] [内存消耗：3,979.23kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/article/pid/86.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '88',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010257s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006523s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 88 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000127s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004924s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 88 LIMIT 1 [ RunTime:0.000320s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:40:51+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/project/id/65.html
+[ log ] 10.0.0.171/index/index/project/id/65.html [运行时间：0.046770s][吞吐率：21.38req/s] [内存消耗：3,957.45kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/pid/86.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '65',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->project[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\project.html [ array (
+  0 => 'list',
+  1 => 'location',
+  2 => 'onenav',
+  3 => 'twonav',
+  4 => 'sannav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008270s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004553s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'project'  AND `id` = 65 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 7 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 65 [ RunTime:0.000173s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:40:53+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/news/id/41.html
+[ log ] 10.0.0.171/index/index/news/id/41.html [运行时间：0.045323s][吞吐率：22.06req/s] [内存消耗：3,985.86kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/project/id/65.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '41',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->news[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\news.html [ array (
+  0 => 'list',
+  1 => 'article',
+  2 => 'onenav',
+  3 => 'twonav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005386s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005214s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'news'  AND `id` = 41 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004580s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 41 [ RunTime:0.000740s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:40:57+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/id/92.html
+[ log ] 10.0.0.171/index/index/article/id/92.html [运行时间：0.052178s][吞吐率：19.17req/s] [内存消耗：3,966.55kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/news/id/41.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '92',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\details.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009739s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005526s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `id` = 92 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000205s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:40:57+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/css/details.css
+[ log ] 10.0.0.171/static/index/css/details.css [运行时间：0.017423s][吞吐率：57.40req/s] [内存消耗：2,147.49kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:40:57+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/img/news/gongyi/1.jpg
+[ log ] 10.0.0.171/static/index/img/news/gongyi/1.jpg [运行时间：0.015599s][吞吐率：64.11req/s] [内存消耗：2,148.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'news' => 'gongyi',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:40:57+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/img/news/gongyi/2.jpg
+[ log ] 10.0.0.171/static/index/img/news/gongyi/2.jpg [运行时间：0.024820s][吞吐率：40.29req/s] [内存消耗：2,148.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'news' => 'gongyi',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:12+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/news/id/40.html
+[ log ] 10.0.0.171/index/index/news/id/40.html [运行时间：0.078562s][吞吐率：12.73req/s] [内存消耗：4,038.06kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/article/pid/86.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '40',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->news[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\news.html [ array (
+  0 => 'list',
+  1 => 'article',
+  2 => 'onenav',
+  3 => 'twonav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000716s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004933s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'news'  AND `id` = 40 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004881s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 40 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:17+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/news/id/39.html
+[ log ] 10.0.0.171/index/index/news/id/39.html [运行时间：0.092483s][吞吐率：10.81req/s] [内存消耗：3,982.68kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/news/id/40.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '39',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->news[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\news.html [ array (
+  0 => 'list',
+  1 => 'article',
+  2 => 'onenav',
+  3 => 'twonav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004476s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005657s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'news'  AND `id` = 39 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004562s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 39 [ RunTime:0.000409s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:20+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/news/id/41.html
+[ log ] 10.0.0.171/index/index/news/id/41.html [运行时间：0.130551s][吞吐率：7.66req/s] [内存消耗：3,985.34kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/news/id/39.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '41',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->news[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\news.html [ array (
+  0 => 'list',
+  1 => 'article',
+  2 => 'onenav',
+  3 => 'twonav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005498s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.012010s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'news'  AND `id` = 41 LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.010752s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 41 [ RunTime:0.000792s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:25+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/news/id/40.html
+[ log ] 10.0.0.171/index/index/news/id/40.html [运行时间：0.046082s][吞吐率：21.70req/s] [内存消耗：4,037.77kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/news/id/41.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '40',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->news[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\news.html [ array (
+  0 => 'list',
+  1 => 'article',
+  2 => 'onenav',
+  3 => 'twonav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000779s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004727s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'news'  AND `id` = 40 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004415s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 40 [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:50+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/news/id/40.html
+[ log ] 10.0.0.171/index/index/news/id/40.html [运行时间：0.122335s][吞吐率：8.17req/s] [内存消耗：4,037.77kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'news',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/news/id/40.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '40',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->news[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\news.html [ array (
+  0 => 'list',
+  1 => 'article',
+  2 => 'onenav',
+  3 => 'twonav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017521s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006959s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'news'  AND `id` = 40 LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.011431s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 40 [ RunTime:0.000913s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:53+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/article/id/99.html
+[ log ] 10.0.0.171/index/index/article/id/99.html [运行时间：0.078117s][吞吐率：12.80req/s] [内存消耗：3,964.81kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/news/id/40.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'id' => '99',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\details.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000701s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006459s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005395s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `id` = 99 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 40 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:43:53+08:00 ] 10.0.0.171 10.0.0.190 GET /static/index/css/details.css
+[ log ] 10.0.0.171/static/index/css/details.css [运行时间：0.018624s][吞吐率：53.69req/s] [内存消耗：2,147.08kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://10.0.0.171/index/index/article/id/99.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:44:07+08:00 ] 10.0.0.171 10.0.0.190 GET /static/index/css/details.css
+[ log ] 10.0.0.171/static/index/css/details.css [运行时间：0.050843s][吞吐率：19.67req/s] [内存消耗：2,147.08kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/css,*/*;q=0.1',
+  'referer' => 'http://10.0.0.171/index/index/article/id/99.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:35+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/id/92.html
+[ log ] 10.0.0.171/index/index/article/id/92.html [运行时间：0.051983s][吞吐率：19.24req/s] [内存消耗：4,208.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/news/id/41.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '92',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\details.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005140s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.006545s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `id` = 92 LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000150s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:36+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/css/details.css
+[ log ] 10.0.0.171/static/index/css/details.css [运行时间：0.017431s][吞吐率：57.37req/s] [内存消耗：2,147.91kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:36+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/img/news/gongyi/1.jpg
+[ log ] 10.0.0.171/static/index/img/news/gongyi/1.jpg [运行时间：0.021331s][吞吐率：46.88req/s] [内存消耗：2,148.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'news' => 'gongyi',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:36+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/img/news/gongyi/2.jpg
+[ log ] 10.0.0.171/static/index/img/news/gongyi/2.jpg [运行时间：0.021450s][吞吐率：46.62req/s] [内存消耗：2,148.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'news' => 'gongyi',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:40+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/id/92.html
+[ log ] 10.0.0.171/index/index/article/id/92.html [运行时间：0.062086s][吞吐率：16.11req/s] [内存消耗：4,207.96kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/news/id/41.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '92',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\details.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.007293s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005690s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `id` = 92 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000130s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:40+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/css/details.css
+[ log ] 10.0.0.171/static/index/css/details.css [运行时间：0.023216s][吞吐率：43.07req/s] [内存消耗：2,147.91kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:40+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/img/news/gongyi/1.jpg
+[ log ] 10.0.0.171/static/index/img/news/gongyi/1.jpg [运行时间：0.023302s][吞吐率：42.92req/s] [内存消耗：2,148.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'news' => 'gongyi',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-08-21T17:45:40+08:00 ] 10.0.0.171 10.0.0.171 GET /static/index/img/news/gongyi/2.jpg
+[ log ] 10.0.0.171/static/index/img/news/gongyi/2.jpg [运行时间：0.028480s][吞吐率：35.11req/s] [内存消耗：2,148.02kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/id/92.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'news' => 'gongyi',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
