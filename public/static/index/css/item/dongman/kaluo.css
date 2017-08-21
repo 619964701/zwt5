@@ -1,0 +1,21 @@
+.CoreProduct{
+	text-transform:Uppercase;
+	color: #787878;
+}
+
+.CoreProduct p{
+	line-height: 30px;
+}
+
+#color{
+	color: #a6272c;
+}
+.CoreProduct li{
+	padding-right: 74px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.CoreProduct ul img{
+	padding: 5px 0px;
+}
+

@@ -1,0 +1,46 @@
+.footer{
+	background: #A6272C;
+	width: 100%;
+	
+}
+.footer span{
+	color:#fff;	
+}
+.partner,.contact{
+	height: 260px;
+	padding: 50px 0px 0px;
+	box-sizing: border-box;
+	width: 520px;
+	
+	display:inline-block;
+}
+.partner{
+	float: left;
+}
+.contact{
+	position: relative;
+}
+.partner-img{
+	padding-top: 20px;
+}
+#address{
+	padding-top: 10px;
+}
+#address span{
+	line-height: 30px;
+}
+.ercode{
+	width: 117px;
+	height: 117px;
+	float: right;
+	position: absolute;
+	top:95px;
+	right:0px;
+	background: url("/static/index/img/ercode.png") no-repeat center center;
+}
+.main-content{
+color: #A6272C;
+width: 1200px;
+margin: 0 auto;
+overflow: hidden;
+}

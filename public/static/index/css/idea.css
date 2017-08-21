@@ -1,0 +1,50 @@
+#summary p{
+	display: inline-block;
+	width: 660px;
+	line-height: 2em;
+	text-indent: 25px;
+}
+#idea-summary1{
+	width: 100px;
+	height:30px;
+	background:url(/static/index/img/idea1.jpg) no-repeat 0px 0px;
+	color: #fff;
+	font-weight: bold;
+	/*text-align: center;*/
+    line-height: 30px;
+	
+
+}
+#idea-summary{
+	width:116px;
+	height:30px;
+	background:url(/static/index/img/idea.jpg) no-repeat 0px 0px;
+	color: #fff;
+	font-weight: bold;
+	/*text-align: center;*/
+    line-height: 30px;
+}
+#idea{
+	/*width:100px;*/
+	height:30px;
+	background:url(/static/index/img/idea2.jpg) no-repeat 0px 0px;
+	color: #fff;
+	font-weight: bold;
+    line-height: 30px;
+}
+#summary{
+	max-width: 1060px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#summary a img{
+	float: right;
+	margin-top: 70px;
+}
+.title1{
+display: inline-block;
+width: 660px;
+float: left;
+}
+

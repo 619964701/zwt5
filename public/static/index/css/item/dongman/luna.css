@@ -1,0 +1,67 @@
+
+/*温拿*/
+.CoreProduct p{
+    color: #787878;
+}
+.pageAbsout .cur{
+	color: #a6272c;
+}
+.CoreImg{
+    padding: 5px 0px 200px;
+}
+.CoreTitle {
+    height: 35px;
+    line-height: 35px;
+    background-color: #E4E4E4;
+    font-size: 16px;
+}
+.CoreTitle span {
+    display: inline-block;
+    padding: 0 28px;
+    line-height: 35px;
+    background: #a6272c;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.CoreProduct p{
+	margin-top: 15px;
+	line-height: 30px;
+}
+.Product-img{
+	padding-top: 10px;
+}
+.CoreProduct .Product-img #p{
+	margin-top: 24px;
+}
+.CoreProduct .Product-img #p p{
+	margin-top: 0;
+}
+.Product-img1{
+	margin: 15px 0px;
+}
+.Product-img1 p{
+	width: 475px;
+	margin-top: 3px;
+}
+#color{
+	color: #a6272c;
+	padding-top: 10px;
+}
+.CoreProduct li{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#jiemi{
+    margin-right: 0;
+}
+.Core-last li{
+    margin-top: 10px;
+}
+
+.CoreProduct .last1 img{
+    float: left;
+    margin-right: 116px;
+}
+

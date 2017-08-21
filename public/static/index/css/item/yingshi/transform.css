@@ -1,0 +1,52 @@
+.CoreTitle {
+    height: 35px;
+    line-height: 35px;
+    background-color: #E4E4E4;
+    font-size: 16px;
+}
+.CoreTitle span {
+    display: inline-block;
+    padding: 0 28px;
+    line-height: 35px;
+    background: #a6272c;
+    color: #fff;
+    font-weight: 500;
+}
+.CoreProduct{
+    padding: 0px 0px 25px;
+
+}
+.CoreProduct ul {
+    width: 1080px;
+    padding: 20px 0px 0px;
+}
+.CoreProduct ul li {
+    float: left;
+    color: #787878;
+    margin-right: 20px;
+}
+.CoreProduct ul li h4{
+	text-align: center;
+}
+
+.CoreHero ul {
+    width: 1080px;
+    
+}
+.CoreHero ul li {
+    float: left;
+    margin-right:10px;
+    width: 250px;
+    height: 450px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.CoreProduct1 p{
+	line-height: 30px;
+	text-indent: 30px;
+	color: #787878;
+}
+.CoreProduct1 p.first{
+	margin-top: 20px;
+}

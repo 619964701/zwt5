@@ -1,0 +1,38 @@
+.contactList {
+    padding-top: 53px;
+    color: #666;
+}
+.contactSum {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E8E8E8;
+    position: relative;
+}
+.contactList .title {
+    font-size: 18px;
+    color: #a6272c;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.contactCon {
+    line-height: 30px;
+}
+.companyTitle {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 8px;
+}
+.contactSum dd.dd2 {
+    position: absolute;
+    left: 565px;
+    top: 70px;
+}
+.contactSum dd.dd2 a {
+    display: block;
+    width: 158px;
+    height: 45px;
+    line-height: 45px;
+    background: url(/static/index/img/inco16.png) 0 0 no-repeat;
+    padding-left: 78px;
+    color: #333;
+    font-weight: bold;
+}

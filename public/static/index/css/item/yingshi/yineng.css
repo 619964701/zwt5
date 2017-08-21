@@ -1,0 +1,52 @@
+/*影视*/
+.pageCon{
+    padding: 20px 0px;
+}
+.pageCon-bottom{
+    padding: 20px 0px 200px;
+}
+.page-container p{
+    color: #787878;
+
+}
+.page-container p.time{
+    color: #a6272c;
+}
+article{
+    text-align: center;
+    color: #787878;
+    padding: 5px;
+}
+p{
+    line-height: 30px;
+    text-indent: 30px;
+}
+.CoreTitle {
+    height: 35px;
+    line-height: 35px;
+    background-color: #E4E4E4;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.CoreTitle span {
+    display: inline-block;
+    padding: 0 28px;
+    line-height: 35px;
+    background: #a6272c;
+    color: #fff;
+    font-weight: 500;
+}
+.yineng{
+	width: 400px;
+	color: #787878;
+	padding-top: 35px;
+}
+.yineng p{
+	margin-top: 25px;
+}
+.yineng h2{
+	margin-bottom: 10px;
+}
+
+
+

@@ -1,0 +1,18 @@
+    /*分页样式*/  
+    .pagination{text-align:center;margin-top:20px;margin-bottom: 20px;}  
+    .pagination li{margin:0px 10px; border:1px solid #e6e6e6;padding: 3px 8px;display: inline-block;}  
+    .pagination .active{background-color: #dd1a20;color: #fff;} 
+     
+    
+    /*分页样式 自己添加*/  
+    .pagination li:hover{
+		background:#DD1A20;
+		color: #fff;
+    }
+    .pagination li:hover a{
+		color: #fff!important;
+    }
+    .pagination .disabled{
+    	color:#aaa!important;
+    	background:#fff!important;
+	}  

@@ -1,0 +1,146 @@
+ .tabs {
+    width: 100%;
+}
+.box-option {
+    background: #f1f1f1;
+}
+.option {
+    line-height: 60px;
+    height: 60px;
+    width: 1060px;
+    margin: 40px auto;
+    font-size: 18px;
+   
+}
+.option li {
+    float: left;
+    width: 33.3%;
+    cursor: pointer;
+    text-align: center;
+}
+.current {
+    border-bottom: 2px solid #A6272C;
+    color: #A6272C;
+    display: inline-block;
+}
+.box .card {
+    width: 1060px;
+    margin: 0 auto;
+}
+.card {
+    border-top: none;
+    padding-top: 30px;
+  }
+.card ul {
+    position: relative;
+}
+.card li.hover {
+    display: block;
+}
+
+.card li {
+    width: 1000px;
+    margin: 0 auto;
+    display: none;
+    transition: opacity .3s linear;
+}
+
+.hover {
+    margin-bottom: 30px;
+}
+
+.hover .notice {
+    font-size: 18px;
+    text-align: center;
+}
+
+.hover p {
+    line-height: 40px;
+    font-size: 15px;
+}
+
+.notice {
+    color: #A6272C;
+    text-align: center;
+    margin: -20px auto 10px;
+}
+.hover div {
+    width: 1000px;
+    margin: 0 auto;
+}
+.hover p {
+    line-height: 40px;
+    font-size: 15px;
+}
+
+ 
+ 
+  span.s{
+      margin-top:50px;
+      font-size:18px;
+  }
+  table{
+      width:1060px;
+      margin: 0 0 150px 0;
+      text-align:center;
+      border-bottom:4px solid #A6272C;
+  }
+  table tr{
+      height:60px;
+  }
+  thead{
+      background:#A6272C;
+      color:#fff;
+      font-size:20px;
+  }
+  thead tr th{
+    text-align:center;
+   }
+
+.a{
+    border-bottom: 2px solid #A6272C;
+  }
+
+  table tr:nth-child(even){background:#f1f1f1;}
+  #outer {
+    width:1000px;
+    margin:40px auto;
+  }
+  #tab {
+    overflow:hidden;
+    zoom:1;
+    height: 60px;
+    line-height: 60px;
+  }
+  #tab li {
+    float:left;
+    color:#fff;
+    height:60px; 
+    cursor:pointer; 
+    line-height:60px;
+    text-align: center;
+    width: 33.3%;
+    background: #f1f1f1;
+    font-size: 20px;
+  }
+  #tab li.active {
+    color:#A6272C;
+  }
+
+  #content ul {
+    line-height:25px;
+    display:none; 
+    
+  }
+  .a-p{
+    line-height:25px;
+    width: 1000px;
+    margin: 20px auto;
+  }
+  #content{
+    font-size: 18px;
+  }
+
+  strong{
+    color: #A6272C;
+  }

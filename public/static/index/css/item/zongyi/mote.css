@@ -1,0 +1,15 @@
+.CoreProduct{
+	text-transform:Uppercase;
+	color: #787878;
+}
+.CoreProduct p{
+	line-height: 30px;
+	text-indent: 30px;
+}
+.CoreProduct #p {
+    width: 500px;
+	line-height: 30px;
+}
+.Product_img{
+	margin-top: 10px;
+}

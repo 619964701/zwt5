@@ -1,0 +1,71 @@
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+.tree li {
+    float: left;
+    list-style-type: none;
+    padding: 20px 5px 0;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+.tree li::before, .tree li::after {
+    border-top: 1px solid #ccc;
+    content: "";
+    height: 20px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    width: 50%;
+}
+.tree li::after {
+    border-left: 1px solid #ccc;
+    left: 50%;
+    right: auto;
+}
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+.tree li:only-child {
+    padding-top: 0;
+}
+.tree li:first-child::before, .tree li:last-child::after {
+    border: 0 none;
+}
+.tree li:last-child::before {
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #ccc;
+}
+.tree li:first-child::after {
+    border-radius: 5px 0 0;
+}
+.tree ul ul::before {
+    border-left: 1px solid #ccc;
+    content: "";
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.tree li a {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    display: inline-block;
+    font-family: arial,verdana,tahoma;
+    font-size: 11px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+.tree li a:hover, .tree li a:hover + ul li a {
+    background: #c8e4f8 none repeat scroll 0 0;
+    border: 1px solid #94a0b4;
+    color: #000;
+}
+.tree li a:hover + ul li::after, .tree li a:hover + ul li::before, .tree li a:hover + ul::before, .tree li a:hover + ul ul::before {
+    border-color: #94a0b4;
+}

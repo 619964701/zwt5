@@ -1,0 +1,38 @@
+
+.CoreProduct {
+    padding-top: 20px;
+}
+.knowledge{
+    height: 30px;
+    line-height: 30px;
+}
+.list-icon{
+    float: left;
+    margin-right: 10px;
+}
+.list-icon img{
+    vertical-align: middle;
+    width: 24px;
+    height: 20px;
+}
+.list-title{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #a6272c;
+}
+#color{
+    color: #a6272c;
+    font-weight: bolder;
+}
+.CoreProduct p{
+    line-height: 30px;
+    font-size: 15px;
+    text-indent: 30px;
+}
+.CoreProduct .img img{
+    padding-top: 10px;
+    margin-right: 15px;
+}
+img#img-last{
+    margin-right: 0px;
+}

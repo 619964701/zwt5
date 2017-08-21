@@ -1,0 +1,115 @@
+.fBg{
+	width: 100%;
+    height: 100px;
+	background: url(/static/index/img/science.jpg) no-repeat center center;
+}
+.page-container{
+	width: 1060px;
+    margin: 0 auto;
+    /*margin-bottom: 50px;*/
+}
+
+.pageAbsout {
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.pageAbsout a{
+	display: inline-block;
+}
+.indexlogo {
+    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pageAbsout .cur{
+	color: #a6272c;
+}
+/*品牌部分*/
+.science-brand {
+    width: 1020px;
+    margin: 0px auto 200px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    height: auto;
+}
+.page-brand{
+	width: 500px;
+	margin: 10px auto 70px;
+}
+.page-brand .brand-option{
+	float: left;
+    font-size: 18px;
+    color: #999;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 10px;
+    cursor: pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.brand-option a{
+	color: #999;
+}
+.brand a{
+	color: #fff;
+}
+.brand{
+	background: #a6272c;
+  	border-radius: 8px;
+  	color: #fff!important;
+}
+/*page-brand-list*/
+.page-brand-list {
+  
+    overflow: hidden;
+}
+.page-brand-item {
+    float: left;
+    width: 314px;
+    height: 294px;
+    height: 306px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    transation:2s;
+}
+.page-brand-item:hover{
+	transform:translate(0px,-5px);
+	box-shadow: 8px 10px 15px #a6272c;
+	
+}
+.page-brand-logo{
+    height: 230px;
+   
+}
+.page-brand-more {
+    background: url(/static/index/img/more.png) no-repeat center center;
+    background-size: contain;
+    width: 5vw;
+    height: 1vw;
+    margin: 0.28vw auto;
+}
+
+/**/
+.card{
+	/*position: relative;*/
+}
+.card .page-brand-list{
+	display: none;
+	transition:.3s linear;
+	overflow: hidden;
+
+}
+.card .page-brand-list.hover{
+	display: block;
+}

@@ -1,0 +1,13 @@
+.CoreProduct p {
+    margin-top: 15px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+.CoreProduct li{
+	float: left;
+	text-align: center;
+	margin-right: 16px;
+}
+#last_li{
+	margin-right: 0;
+}

@@ -1,0 +1,78 @@
+.contactList {
+    padding-top: 53px;
+    color: #666;
+}
+
+.commonWeb {
+    width: 1060px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.contactAdd {
+    padding-bottom: 25px;
+}
+.conname {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+#map{
+	width:1060px;
+	height:550px;
+	border:#ccc solid 1px;
+	font-size:12px;
+	position: relative;
+	margin-bottom: 40px;
+}
+.BMap_Marker{
+	position: absolute; 
+	left: 330px; 
+	top: 424px; 
+	z-index: 4510899;
+
+}
+.map_img{
+	position: absolute;
+	width: 20px;
+	height: 25px;
+	overflow: hidden;
+	top:432px;
+	left:650px;
+}
+.map_img img{
+	display: block; 
+
+	margin-left:-46px;
+	margin-top:-21px; 
+}
+.BMapLabel{
+	position: absolute; 
+	background-color: rgb(255, 255, 255); 
+	border: 1px solid red;
+	padding: 1px; 
+	white-space: nowrap;  
+    font-size: 12px; 
+    line-height: normal;  
+    z-index: 80;
+    user-select: none;
+    left: 670px;
+    top: 432px;
+}
+.mapmore {
+    text-align: center;
+}
+.mapmore a {
+    display: inline-block;
+    width: 140px;
+    height: 42px;
+    background: #a6272c;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+
+ 

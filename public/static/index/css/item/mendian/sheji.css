@@ -1,0 +1,44 @@
+.CoreProduct{
+	text-transform: uppercase;
+	color: #787878;
+}
+
+.CoreProduct p{
+	line-height: 30px;
+	text-indent: 30px;
+}
+
+
+.CoreProduct .first-ul li{
+	float: left;
+	margin-right: 20px;
+
+
+}
+.CoreProduct ul{
+	text-align: center;
+	
+}
+
+.CoreProduct ul li h4{
+	padding-bottom: 10px;
+}
+#last_li{
+	margin-right: 0px;
+}
+.Product_Img{
+	padding-top: 10px;
+}
+.last-ul li{
+	margin-right: 36px;
+
+}
+#p2{
+	width: 480px;
+
+	text-align: center;
+	margin-top: 46px;
+}
+#p{
+	width: 660px;
+}

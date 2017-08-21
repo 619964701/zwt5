@@ -1,0 +1,77 @@
+.CoreTitle {
+    height: 35px;
+    line-height: 35px;
+    background-color: #E4E4E4;
+    font-size: 16px;
+}
+.CoreTitle span {
+    display: inline-block;
+    padding: 0 28px;
+    line-height: 35px;
+    background: #a6272c;
+    color: #fff;
+    font-weight: 500;
+}
+.CoreProduct{
+    padding: 0px 0px 25px;
+
+}
+.CoreProduct ul {
+    padding: 0px 0px 0px;
+}
+#jiemi{
+    margin-right: 0px;
+}
+.CoreProduct ul li {
+    float: left;
+    color: #787878;
+    margin-right: 65px;
+    position: relative;
+}
+.CoreProduct ul li h4{
+	text-align: center;
+}
+.paperImg{
+    width: 1060px;
+    padding: 20px 0px 0px;
+}
+.CoreProduct p{
+    line-height: 30px;
+    text-indent: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+#wenhao {
+    margin-right: 0px;
+}
+
+.plus{
+    position: absolute;
+    top: 40%;
+    left: 107%;
+}
+.plus1{
+    position: absolute;
+    top: 40%;
+    left: 107%;
+}
+#wenhao .img{
+    width: 203px;
+    height: 270px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+#wenhao .img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.yanyuan{
+    color: #a6272c;
+   
+    margin-top: 4px;
+}
+.CoreProduct-Last{
+    padding-bottom: 200px;
+}

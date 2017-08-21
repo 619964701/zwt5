@@ -1,0 +1,21 @@
+#sharetitle{
+	background:#A6272C;
+	color:#fff;
+	text-align:left;
+	font-size:20px;
+}
+.tablelist{
+	background:#F1F1F1;
+}
+.c{
+	border-bottom:1px dashed #333;
+}
+.tablelist tr{
+	text-align:left;
+}
+.d td{
+	text-align:center;
+}
+.tablelist tr td{
+	padding-left:30px;
+}

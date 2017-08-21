@@ -1,0 +1,23 @@
+/*影视*/
+.pageCon{
+    padding: 20px 0px;
+}
+.pageCon-bottom{
+    padding: 20px 0px 200px;
+}
+.page-container p{
+    color: #787878;
+
+}
+.page-container p.time{
+    color: #a6272c;
+}
+article{
+    text-align: center;
+    color: #787878;
+    padding: 5px;
+}
+p{
+    line-height: 30px;
+    text-indent: 30px;
+}

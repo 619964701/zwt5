@@ -1,0 +1,47 @@
+.fBg{
+	background: url(/static/index/img/fBg.png) no-repeat center;
+    width: 100%;
+    height: 100px;
+    background-size: 100% auto;
+}
+.page-container{
+	width: 1060px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.pageAbsout {
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.pageAbsout a{
+	display: inline-block;
+}
+.indexlogo {
+    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pageAbsout .cur{
+	color: #a6272c;
+}
+h3.title{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #a6272c;
+}
+.page-title{
+	/*padding: 15px 0;*/
+	line-height: 2em;
+	text-indent: 25px;
+
+}
+.p-t{
+	padding-bottom: 35px;
+
+}

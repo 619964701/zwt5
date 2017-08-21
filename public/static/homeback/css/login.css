@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	background: url(../images/admin.jpg);
+	background-repeat:no-repeat;
+}
+.header{
+	top: 0;
+    line-height: 60px;
+	background-color:#426374;
+	font-size:30px;
+	text-indent:20px;
+}
+.header, .footer {
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 99;
+}
+p,.header{
+	color:#FFFFFF;
+}
+.loginBox {
+    background: rgba(0, 0, 0, 0) url("../images/admin-loginform-bg.png") no-repeat scroll 0 0;
+    height: 330px;
+    left: 50%;
+    margin-left: -309px;
+    margin-top: -184px;
+    padding-top: 38px;
+    position: absolute;
+    top: 50%;
+    width: 617px;
+}
+#jsonp{
+	color:red;
+	font-size:18px;
+}
+.loginBox_1{
+	margin:0px 150px 120px;
+}
+.input_text{
+	line-height:25px;
+}
+p{
+	line-height:40px;
+	font-size:20px;
+}
+.input_submit{
+	border-radius: 5px;
+	background-color: #5eb95e;
+	color: #fff;
+}
+.footer {
+    background-color: #426374;
+    bottom: 0px;
+    color: #fff;
+    font-size: 15px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+}
+
+

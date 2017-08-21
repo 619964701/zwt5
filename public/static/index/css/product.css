@@ -1,0 +1,107 @@
+﻿.w1060{
+	text-indent: 30px;
+	padding: 20px 0px;
+	overflow: hidden;
+}
+/*图片 和文字 垂直居中部分*/
+.box{
+	height: 250px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	}
+div.img{
+	width: 182px;
+	height: 182px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	position: absolute;
+	top: 50%;
+	left: 13%;
+	transform:translate(-50%,-50%);	
+}
+.p{
+	width: 700px;
+	line-height: 30px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform:translate(70%,-50%);
+}
+.p1{
+	margin-top:10px;
+}
+.text2{
+	margin-top: 5px;
+}
+.product{
+	margin-bottom:200px
+}
+/* 竹签 */
+span.zhuqian{
+	padding: 5px;
+}
+/* 剧目 */
+span.jumu{
+	padding: 2px;
+	height: 26px;
+	line-height: 26px;
+}
+/* 竹石 */
+span.zhushi{
+	padding: 2px;
+	height: 40px;
+	line-height: 40px;
+}
+/* yali */
+.color{
+	color: #a6272c;
+}
+span.yali{
+	padding: 2px;
+	height: 40px;
+	line-height: 40px;
+}
+span{
+	padding: 2px;
+	height: 40px;
+	line-height: 40px;
+}
+/* 芬子 */
+.fenp{
+	margin-top: 5px;
+}
+.fenzi{
+	line-height: 40px;
+}
+.fenzi h3{
+	font-size:18px;
+	color:#a6272c;
+}
+.r_img{
+	margin-top: 5px;
+}
+/* 中海 */
+.left1{
+	margin-right: 10px;
+	height: 438px;
+}
+span.zhonghai{
+	padding: 5px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+/* 帝会 */
+.di{
+	line-height: 40px;
+
+}
+.parts{
+	margin-left:10px;
+}
+
+span.dihui{
+	padding: 5px;
+	height: 40px;
+	line-height: 40px;
+}

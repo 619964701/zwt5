@@ -1,0 +1,71 @@
+/*public*/
+.fBg1{
+    width: 100%;
+    height: 100px;
+    background: url(../images/xiangmu.jpg) no-repeat center center;
+}
+.page-container{
+	width: 1060px;
+    margin: 0 auto;
+    /*margin-bottom: 50px;*/
+}
+.page-container h4{
+    color: #787878;
+}
+.pageAbsout {
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.pageAbsout a{
+	display: inline-block;
+}
+.indexlogo {
+    background: url(http://www.genzon.com.cn/webimages/inco13.png) 0 1px no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+
+
+
+  
+
+.pageAbsout .cur{
+	color: #a6272c;
+}
+.CoreImg{
+    padding: 5px 0px 200px;
+}
+.CoreTitle {
+    height: 35px;
+    line-height: 35px;
+    background-color: #E4E4E4;
+    font-size: 16px;
+}
+.CoreTitle span {
+    display: inline-block;
+    padding: 0 28px;
+    line-height: 35px;
+    background: #a6272c;
+    color: #fff;
+    font-weight: 500;
+}
+.CoreProduct{
+    padding: 0px 0px 25px;
+
+}
+
+.CoreProduct p{
+	margin-top: 15px;
+	line-height: 30px;
+    color: #787878;
+    text-indent: 30px;
+}
+
+
+.CoreProduct img{
+    margin-top: 10px;
+}

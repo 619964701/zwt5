@@ -1,0 +1,69 @@
+html, body, #container {
+    width: 100%;
+    height: auto;
+    min-width: 1280px;
+    position: relative;
+}
+#header {
+    width: 100%;
+    height: 84px;
+    background: #fff;
+}
+#header .content-h {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    /*border: 1px solid red;*/
+}
+#header .logo {
+    position: relative;
+    top: 27px;
+    float: left;
+}
+#header .nav {
+    float: left;
+    
+    height: 100%;
+}
+#header .nav li {
+    float: left;
+    height: 100%;
+    padding: 0 30px;
+    margin-left: 32px;
+    /*padding: 0 40px;*/
+}
+#header .nav li a.a-t {
+    line-height: 84px;
+    height: 80px;
+    display: block;
+}
+#header .nav li a {
+    color: #333;
+    position: relative;
+    top: 0;
+    /*font-size: 20px;*/
+    /*font-weight: bold;*/
+    /*font:normal  20px '微软雅黑';*/
+    font: bold 21px arial,sans-serif,'微软雅黑';
+    opacity: 0.9
+}
+
+#banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 448px;
+}
+.t_banner {
+    width: 100%;
+    max-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.banner_img {
+    width: 100%;
+    height: 450px;
+}
+.nav li a:hover{
+	border-bottom: 2px solid #A6272C;
+	}
