@@ -402,5 +402,33 @@ a:hover{
     padding-right: 20px;
     display: inline-block;
 }
+.rightfooter .weixin {
+    float: left;
+    margin-right: 22px;
+    position: relative;
+    cursor: pointer;
+    height: 44px;
+    line-height: 44px;
+}
+.rightfooter .weixin span {
+    background: url(../img/646.png) 0 center no-repeat;
+    float: right;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 45px;
+    display: block;
+}
+.twoweixinimg {
+    position: absolute;
+    bottom: 20px;
+    left: -34px;
+    padding-bottom: 10px;
+    display: none;
+}
+.twoweixinimg img{
+    width: 100px;
+    height: 100px;
+}
+
 
 
