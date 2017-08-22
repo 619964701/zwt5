@@ -28060,3 +28060,698 @@
 [ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 88 LIMIT 1 [ RunTime:0.000998s ]
 
 ---------------------------------------------------------------
+[ 2017-08-21T17:51:36+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/project/id/7.html
+[ log ] 10.0.0.171/index/index/project/id/7.html [运行时间：0.054600s][吞吐率：18.32req/s] [内存消耗：3,953.77kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/pid/77.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->project[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\project.html [ array (
+  0 => 'list',
+  1 => 'location',
+  2 => 'onenav',
+  3 => 'twonav',
+  4 => 'sannav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011088s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004668s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'project'  AND `id` = 7 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 7 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` IN (46) [ RunTime:0.000294s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:52:33+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/pid/77.html
+[ log ] 10.0.0.171/index/index/article/pid/77.html [运行时间：0.087310s][吞吐率：11.45req/s] [内存消耗：3,954.36kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/project/id/7.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '77',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025559s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005928s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.008252s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 77 LIMIT 1 [ RunTime:0.000487s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:56:24+08:00 ] 10.0.0.171 10.0.0.171 POST /homeback/article/add.html
+[ log ] 10.0.0.171/homeback/article/add.html [运行时间：0.038586s][吞吐率：25.92req/s] [内存消耗：3,745.96kb] [文件加载：55]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://10.0.0.171/homeback/article/index.html',
+  'content-length' => '10',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'province' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->add[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006398s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 7 [ RunTime:0.000243s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:56:31+08:00 ] 10.0.0.171 10.0.0.171 GET /homeback/article/index.html?navid=49
+[ log ] 10.0.0.171/homeback/article/index.html?navid=49 [运行时间：0.062309s][吞吐率：16.05req/s] [内存消耗：4,025.14kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/homeback/article/index.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'navid' => '49',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->index[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\article\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'nav',
+  3 => 'tiaoshu',
+  4 => 'ye',
+  5 => 'page',
+  6 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010606s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004619s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 49 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004669s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT `a`.*,`n`.`pid`,n.id nid,n.navName xnavName FROM `zwt_article` `a` INNER JOIN `zwt_nav` `n` ON `a`.`nav_id`=`n`.`id` WHERE  `nav_id` IN (76,77) ) s INNER JOIN `zwt_nav` `b` ON `s`.`pid`=`b`.`id` LIMIT 1 [ RunTime:0.002556s ]
+[ sql ] [ SQL ] SELECT `s`.*,b.navName dnavName FROM ( SELECT `a`.*,`n`.`pid`,n.id nid,n.navName xnavName FROM `zwt_article` `a` INNER JOIN `zwt_nav` `n` ON `a`.`nav_id`=`n`.`id` WHERE  `nav_id` IN (76,77) ) s INNER JOIN `zwt_nav` `b` ON `s`.`pid`=`b`.`id` ORDER BY s.pid,s.xnavName LIMIT 0,10 [ RunTime:0.002693s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000115s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000111s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000141s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:56:33+08:00 ] 10.0.0.171 10.0.0.171 GET /homeback/article/edit/id/74.html
+[ log ] 10.0.0.171/homeback/article/edit/id/74.html [运行时间：0.043682s][吞吐率：22.89req/s] [内存消耗：3,846.37kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/homeback/article/index.html?navid=49',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '74',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->edit[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\article\edit.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'zuxian',
+  3 => 'data',
+  4 => 'danav',
+  5 => 'xiaonav',
+  6 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004368s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `id` = 74 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004702s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000287s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:59:05+08:00 ] 10.0.0.171 10.0.0.171 POST /homeback/article/update/id/74.html
+[ log ] 10.0.0.171/homeback/article/update/id/74.html [运行时间：0.053081s][吞吐率：18.84req/s] [内存消耗：3,965.23kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'update',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'multipart/form-data; boundary=---------------------------243291436410141',
+  'content-length' => '2719',
+  'referer' => 'http://10.0.0.171/homeback/article/edit/id/74.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'navid' => '49',
+  'countyid' => '77',
+  'hiddenprovince' => '7',
+  'hiddencity' => '49',
+  'hiddencounty' => '77',
+  'title' => '智能手机壳',
+  'title_alias' => '智能手机壳',
+  'yinxu' => '',
+  'introtext' => '<br>
+		<video src="/static/index/video/xiangmu/keji/kakaotalk_1484878523413.mp4" width="1060" height="470" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+		<br>
+		<br>
+		<img src="/static/index/img/item/keji/screen_images/1.jpg" alt="" width="100%">
+		
+	</div>
+	<br>
+	<!-- 手机壳介绍 -->
+	<div class="page-container">
+		
+		<div class="CoreProduct">
+			<h3 class="CoreTitle"><span>外观多样化</span></h3>
+		</div>
+
+		<div class="product-Image clearfix">
+			<img src="/static/index/img/item/keji/screen_images/4.jpg" alt="">
+			<img src="/static/index/img/item/keji/screen_images/5.jpg" alt="" class="right">
+			<img src="/static/index/img/item/keji/screen_images/6.jpg" alt="">
+			<img src="/static/index/img/item/keji/screen_images/7.jpg" alt="" class="right">
+		</div>
+
+		<div class="CoreProduct">
+			<h3 class="CoreTitle"><span>功能实用化</span></h3>
+			<br>
+			<img src="/static/index/img/item/keji/screen_images/2.png" alt="">
+			
+		</div>
+
+		<div class="CoreProduct">
+			<h3 class="CoreTitle"><span>质量保障化</span></h3>
+		</div>
+		<div class="CoreImg clearfix">
+			<img src="/static/index/img/item/keji/screen_images/34.png" alt="">
+			<img src="/static/index/img/item/keji/screen_images/35.png" alt="" class="right">
+			<img src="/static/index/img/item/keji/screen_images/36.png" alt="">
+			<img src="/static/index/img/item/keji/screen_images/37.png" alt="" class="right">
+		</div>',
+  'created_by' => '智能手机壳',
+  'id' => '74',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->update[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] D:\wamp\www\zwt5\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010664s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005011s ]
+[ sql ] [ SQL ] UPDATE `zwt_article`  SET `title`='智能手机壳',`params`=NULL,`yinxu`='',`title_alias`='智能手机壳',`introtext`='<br>\r\n		<video src=\"/static/index/video/xiangmu/keji/kakaotalk_1484878523413.mp4\" width=\"1060\" height=\"470\" controls=\"controls\">\r\n您的浏览器不支持 video 标签。\r\n</video>\r\n		<br>\r\n		<br>\r\n		<img src=\"/static/index/img/item/keji/screen_images/1.jpg\" alt=\"\" width=\"100%\">\r\n		\r\n	</div>\r\n	<br>\r\n	<!-- 手机壳介绍 -->\r\n	<div class=\"page-container\">\r\n		\r\n		<div class=\"CoreProduct\">\r\n			<h3 class=\"CoreTitle\"><span>外观多样化</span></h3>\r\n		</div>\r\n\r\n		<div class=\"product-Image clearfix\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/4.jpg\" alt=\"\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/5.jpg\" alt=\"\" class=\"right\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/6.jpg\" alt=\"\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/7.jpg\" alt=\"\" class=\"right\">\r\n		</div>\r\n\r\n		<div class=\"CoreProduct\">\r\n			<h3 class=\"CoreTitle\"><span>功能实用化</span></h3>\r\n			<br>\r\n			<img src=\"/static/index/img/item/keji/screen_images/2.png\" alt=\"\">\r\n			\r\n		</div>\r\n\r\n		<div class=\"CoreProduct\">\r\n			<h3 class=\"CoreTitle\"><span>质量保障化</span></h3>\r\n		</div>\r\n		<div class=\"CoreImg clearfix\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/34.png\" alt=\"\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/35.png\" alt=\"\" class=\"right\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/36.png\" alt=\"\">\r\n			<img src=\"/static/index/img/item/keji/screen_images/37.png\" alt=\"\" class=\"right\">\r\n		</div>',`nav_id`=77,`created`='2017-08-21 17:59:05',`created_by`='智能手机壳'  WHERE  `id` = 74 [ RunTime:0.002629s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:59:08+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/pid/77.html
+[ log ] 10.0.0.171/index/index/article/pid/77.html [运行时间：0.064351s][吞吐率：15.54req/s] [内存消耗：3,954.74kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/project/id/7.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '77',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001139s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006505s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005283s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 77 LIMIT 1 [ RunTime:0.000402s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:59:08+08:00 ] 10.0.0.171 10.0.0.171 GET /homeback/article/index.html
+[ log ] 10.0.0.171/homeback/article/index.html [运行时间：0.074454s][吞吐率：13.43req/s] [内存消耗：4,089.59kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/homeback/article/update/id/74.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->index[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\article\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'nav',
+  3 => 'tiaoshu',
+  4 => 'ye',
+  5 => 'page',
+  6 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010690s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004363s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT `a`.*,`n`.`pid`,n.id nid,n.navName xnavName FROM `zwt_article` `a` INNER JOIN `zwt_nav` `n` ON `a`.`nav_id`=`n`.`id` ) s INNER JOIN `zwt_nav` `b` ON `s`.`pid`=`b`.`id` LIMIT 1 [ RunTime:0.003352s ]
+[ sql ] [ SQL ] SELECT `s`.*,b.navName dnavName FROM ( SELECT `a`.*,`n`.`pid`,n.id nid,n.navName xnavName FROM `zwt_article` `a` INNER JOIN `zwt_nav` `n` ON `a`.`nav_id`=`n`.`id` ) s INNER JOIN `zwt_nav` `b` ON `s`.`pid`=`b`.`id` ORDER BY s.pid,s.xnavName LIMIT 0,10 [ RunTime:0.004153s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000133s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.000134s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000132s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:59:57+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/project/id/49.html
+[ log ] 10.0.0.171/index/index/project/id/49.html [运行时间：0.044889s][吞吐率：22.28req/s] [内存消耗：3,950.99kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'project',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/article/pid/77.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '49',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->project[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\project.html [ array (
+  0 => 'list',
+  1 => 'location',
+  2 => 'onenav',
+  3 => 'twonav',
+  4 => 'sannav',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006061s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `htmlName` = 'project'  AND `id` = 49 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 7 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 49 [ RunTime:0.000217s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T17:59:59+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/pid/76.html
+[ log ] 10.0.0.171/index/index/article/pid/76.html [运行时间：0.055796s][吞吐率：17.92req/s] [内存消耗：3,958.42kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/project/id/49.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '76',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010170s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004871s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 76 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005203s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 76 LIMIT 1 [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T18:00:06+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/pid/77.html
+[ log ] 10.0.0.171/index/index/article/pid/77.html [运行时间：0.055867s][吞吐率：17.90req/s] [内存消耗：3,954.70kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '77',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000930s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005656s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 77 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 49 LIMIT 1 [ RunTime:0.000105s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005162s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 77 LIMIT 1 [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T18:00:27+08:00 ] 10.0.0.171 10.0.0.171 GET /index/index/article/pid/86.html
+[ log ] 10.0.0.171/index/index/article/pid/86.html [运行时间：0.044327s][吞吐率：22.56req/s] [内存消耗：3,979.15kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.171/index/index/project/id/49.html',
+  'cookie' => 'PHPSESSID=lf0a0mctdhcgg3is0nt2no4q94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '86',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000671s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004405s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 86 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.004246s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 86 LIMIT 1 [ RunTime:0.000301s ]
+
+---------------------------------------------------------------
+[ 2017-08-21T18:00:40+08:00 ] 10.0.0.171 10.0.0.190 GET /index/index/article/pid/88.html
+[ log ] 10.0.0.171/index/index/article/pid/88.html [运行时间：0.135530s][吞吐率：7.38req/s] [内存消耗：3,979.41kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.171',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://10.0.0.171/index/index/news/id/40.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '88',
+)
+[ info ] [ RUN ] app\index\controller\IndexController->article[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\item.html [ array (
+  0 => 'list',
+  1 => 'onenav',
+  2 => 'twonav',
+  3 => 'sannav',
+  4 => 'article',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011007s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.018146s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.001529s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 88 LIMIT 1 [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 65 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.011940s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_article` WHERE  `nav_id` = 88 LIMIT 1 [ RunTime:0.000782s ]
+
+---------------------------------------------------------------

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503308739;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503369666;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,107 +7,6 @@
 	<link rel="stylesheet" href="/static/index/css/base1.css">
 	<link rel="stylesheet" href="/static/index/css/style.css">
 	<link rel="stylesheet" href="/static/index/css/details.css">
-	<style>
-	
-	.page-container{
-	width: 1060px;
-    margin: 0 auto;
-    /*margin-bottom: 50px;*/
-}
-.pageAbsout {
-    padding: 20px 0;
-    border-bottom: 1px solid #E8E8E8;
-}
-.pageAbsout a{
-	display: inline-block;
-}
-.indexlogo {
-    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
-    display: inline-block;
-    width: 21px;
-    height: 20px;
-    vertical-align: middle;
-}
-.pageAbsout .cur{
-	color: #a6272c;
-}
-/*内容*/
-.commonDetailed {
-   
-    margin-top: 55px;
-}
-.commonDetailedtitle {
-    padding: 0 170px;
-}
-.commonDetailedtitle h3 {
-    font-size: 28px;
-    text-align: center;
-    line-height: 32px;
-    color: #1a1a1a;
-    margin-bottom: 25px;
-}
-.commonDetailedtitle .date {
-    text-align: center;
-    display: block;
-    color: #666;
-    font-size: 13px;
-}
-.commonDetailedContents {
-    padding: 30px 170px;
-    font-size: 16px;
-    line-height: 32px;
-    color: #1a1a1a;
-    text-indent: 32px;
-}
-.commonDetailedContents img {
-    display: block;
-    max-width: 100%;
-    width: 600px !important;
-    height: auto !important;
-    margin: 20px auto;
-}
-.commonDetailedContentsfoot {
-    padding-bottom: 65px;
-}
-.commonDetailedContentsfoot p.return {
-    text-align: center;
-    padding-bottom: 40px;
-}
-.commonDetailedContentsfoot p.return a {
-    display: inline-block;
-    background: #a6272c;
-    padding: 6px 34px;
-    color: #FFF;
-    font-size: 14px;
-}
-.commonDetailedContentsfoot dl {
-    border: 1px solid #cccccc;
-    border-left: none;
-    border-right: none;
-    font-size: 13px;
-    padding: 13px 0px;
-}
-.commonDetailedContentsfoot dl dt {
-    float: left;
-}
-.commonDetailedContentsfoot dl a {
-    color: #666;
-}
-.commonDetailedContentsfoot dl span {
-    display: inline-block;
-   
-    color: #1a1a1a;
-    line-height: 27px;
-    padding: 0px 10px;
-    margin-right: 15px;
-}
-.commonDetailedContentsfoot dl dd {
-    float: right;
-}
-	
-
-		
-	</style>
 </head>
 <body>
 	<!-- 首页头部开始 -->
@@ -181,12 +80,19 @@
              
                 <dl class="clearfix">
                     <dt>
-                        <a href="/News/271.html">
-                        	<span>上一条</span>“惠生活 慧办公 汇生态”——正中会APP内测启动会成功召开
+                    	<?php if(($back=='')): ?>
+                    	<span>暂&nbsp;&nbsp;&nbsp;无</span>
+                    	<?php else: ?>
+                        <a href="<?php echo url('index/article',['id'=>$back['id']]); ?>">
+                        	<span>上一条</span><?php echo $back['title']; ?>
                         </a>
-                        <a href="/News/271.html">
-                        	<span>下一条</span>“惠生活 慧办公 汇生态”——正中会APP内测启动会成功召开
+                        <?php endif; if(($next=='')): ?>
+                    	<span>暂&nbsp;&nbsp;&nbsp;无</span>
+                    	<?php else: ?>
+                        <a href="<?php echo url('index/article',['id'=>$next['id']]); ?>">
+                        	<span>下一条</span><?php echo $next['title']; ?>
                         </a>
+                        <?php endif; ?>
                     </dt>
                 </dl>
             </div>

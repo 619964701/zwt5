@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\project.html";i:1503021190;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\project.html";i:1503367459;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -170,7 +170,7 @@
 <script src="/static/index/js/jquery-1.12.4.min.js"></script>
 <script src="/static/index/js/index.js"></script>
 <script>
-	$(".down_2:nth-").css("display","block");
+	
 
 </script>
 </html>

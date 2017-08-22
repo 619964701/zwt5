@@ -157,7 +157,7 @@ class IndexController extends Controller{
                     $twonav = $nav;
                     
                 }
-                $article = Db::name('article')->where('nav_id','=',$twonav['id'])->select();
+                $article = Db::name('article')->where('nav_id','=',$twonav['id'])->order('created desc')->select();
                 $this->assign('article',$article);
                 $this->assign('onenav',$onenav);
                 $this->assign('twonav',$twonav);
@@ -231,6 +231,10 @@ class IndexController extends Controller{
                 $this->assign('onenav',$onenav);
                 $this->assign('twonav',$twonav);
                 $this->assign('article',$article);
+                $back = Db::name('article')->where('created','>',$article['created'])->where('nav_id','=',$twonav['id'])->order('created desc')->find();
+                $next = Db::name('article')->where('created','<',$article['created'])->where('nav_id','=',$twonav['id'])->order('created desc')->find();
+                $this->assign('back',$back);
+                $this->assign('next',$next);
                 return $this->fetch('details');
             }else{
                 $this->error('请输入正确的要浏览信息！');
