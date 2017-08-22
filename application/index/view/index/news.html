@@ -107,7 +107,7 @@
 		<div class="content">
 			{volist name="article" id="vo"}
 			<div class="wai">
-				<div class="nei1"><a href="{:url('index/article',['id'=>$vo.id])}"><img src="/static/index/img/test.jpg" width="335px" height="190px" alt=""  class="left" /></a></div>
+				<div class="nei1"><a href="{:url('index/article',['id'=>$vo.id])}"><img src="{$vo.img}" width="335px" height="190px" alt=""  class="left" /></a></div>
 				<div class="nei2">
 					<h3 class="hh3">
 						<a href="{:url('index/article',['id'=>$vo.id])}">{$vo.title}</a>

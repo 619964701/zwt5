@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503306541;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503383099;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503021190;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -148,7 +148,7 @@
 		<div class="content">
 			<?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 			<div class="wai">
-				<div class="nei1"><a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><img src="/static/index/img/test.jpg" width="335px" height="190px" alt=""  class="left" /></a></div>
+				<div class="nei1"><a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><img src="<?php echo $vo['img']; ?>" width="335px" height="190px" alt=""  class="left" /></a></div>
 				<div class="nei2">
 					<h3 class="hh3">
 						<a href="<?php echo url('index/article',['id'=>$vo['id']]); ?>"><?php echo $vo['title']; ?></a>
