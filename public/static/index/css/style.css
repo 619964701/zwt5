@@ -86,7 +86,7 @@ a:hover{
     position: fixed;
     top: 80px;
     left: 0px;
-    z-index: 3;
+    z-index: 300;
 }
 
 .subWraper {
