@@ -411,7 +411,7 @@ a:hover{
     line-height: 44px;
 }
 .rightfooter .weixin span {
-    background: url(../img/646.png) 0 center no-repeat;
+    background: url("/static/index/img/646.png") 0 center no-repeat;
     float: right;
     height: 44px;
     line-height: 44px;
