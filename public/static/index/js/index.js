@@ -85,6 +85,11 @@ $(function(){
 	})
 })
 
-
+$(".weixin").mouseenter(function(){
+	$(".twoweixinimg").css("display","block");
+})
+$(".weixin").mouseleave(function(){
+	$(".twoweixinimg").css("display","none");
+})
 
 			
