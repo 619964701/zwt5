@@ -1,0 +1,76 @@
+﻿.page-container{
+	width: 1060px;
+    margin: 0 auto;
+    /*margin-bottom: 50px;*/
+}
+.pageAbsout {
+    padding: 20px 0;
+    border-bottom: 1px solid #E8E8E8;
+}
+.pageAbsout a{
+	display: inline-block;
+}
+.indexlogo {
+    background: url(/static/index/img/inco13.png) 0 1px no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    vertical-align: middle;
+}
+.pageAbsout .cur{
+	color: #a6272c;
+}
+.content{
+	margin-top:10px;
+}
+.wai{
+	border-bottom:1px solid #CDCDCD;
+	padding:20px;
+	height:200px;
+}
+.wai:hover{
+	background:#E4FBF7;
+}
+.nei1{
+	float:left;
+	width:340px;
+	height:200px;
+}
+.nei2{
+	height:200px;
+	margin-left:30px;
+	float:right;
+	width:60%;
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.hh3{
+	margin-top:10px;
+}
+.content-p{
+	color:#666666;
+	margin-bottom:25px;
+	font-size: 12px;
+}
+.time{
+	font-family: Arial;
+	color:#666666;
+	margin-top:7px;
+	margin-bottom:15px;
+}
+.details{
+	border:1px solid #666666;
+	padding:5px 10px;
+	display:inline;
+}
+.details:hover{
+	background:#A6272C;
+	color:#FFFFFF;
+	border:1px solid #A6272C;
+	text-decoration:none;
+}
