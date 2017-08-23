@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\product.html";i:1503452650;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\product.html";i:1503482487;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -109,7 +109,7 @@
 		<div>
 			<br />
 			<div class="tishi">内容待更新，敬请期待。。。<br /><br />
-			<p><a class="fanhui" href="#" onClick="javascript :history.back(-1);">返回</a></p></div>
+			<p> <a href="<?php echo url('index/'.$twonav['htmlName'],['id'=>$twonav['id']]); ?>">返回</a></p></div>
 			<br />
 		</div>
 	<?php endif; ?>

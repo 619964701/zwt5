@@ -267,7 +267,7 @@ class IndexController extends Controller{
         //头部导航的内容
         $tree = $this->nav();
         $this->assign('list',$tree);
-        $data = Db::name('zhaopin')->paginate(2);
+        $data = Db::name('zhaopin')->paginate(8);
         $page = $data->render();
         $this->assign('page',$page);
         $this->assign('data',$data);
