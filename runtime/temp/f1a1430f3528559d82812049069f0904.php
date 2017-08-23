@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503452299;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\details.html";i:1503452526;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="/static/index/css/style.css">
 	<link rel="stylesheet" href="/static/index/css/details.css">
 	
-	<meta name ="keywords" content="美女,竹,签,周杰伦,刘德华,谭咏麟,竹签,竹签文化,竹文投,金融,明星,电影,综艺,时政,胡歌,头条,热点,段子,内涵,你懂的,内涵段子">
-	<meta name="description" content="这是内容详情页">
+	<meta name ="keywords" content="竹签,竹文投,竹签文化,竹文品牌,美女,竹,签,周杰伦,刘德华,谭咏麟,金融,明星,电影,综艺,时政,胡歌,头条,热点,段子,内涵,你懂的,内涵段子">
+<meta name="description" content="竹签,竹签文化,竹文投,竹文品牌,这是内容详情页">
 </head>
 <body>
 	<!-- 首页头部开始 -->

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503452278;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503452636;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +11,8 @@
 
 <meta name="format-detection" content="telephone=no">
 
-<meta name ="keywords" content="美女,竹,签,周杰伦,刘德华,谭咏麟,竹签,竹签文化,竹文投,金融,明星,电影,综艺,时政,胡歌,头条,热点,段子,内涵,你懂的,内涵段子">
-<meta name="description" content="这是新闻列表页">
+<meta name ="keywords" content="竹签,竹文投,竹签文化,竹文品牌,美女,竹,签,周杰伦,刘德华,谭咏麟,金融,明星,电影,综艺,时政,胡歌,头条,热点,段子,内涵,你懂的,内涵段子">
+<meta name="description" content="竹签,竹签文化,竹文投,竹文品牌,这是新闻列表页">
 <title>集团新闻</title>
 <link rel="stylesheet" href="/static/index/css/base1.css">
 <link rel="stylesheet" href="/static/index/css/style.css">
