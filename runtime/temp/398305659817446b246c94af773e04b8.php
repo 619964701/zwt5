@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\shezhao.html";i:1503452695;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:68:"D:\wamp\www\zwt5\public/../application/index\view\index\shezhao.html";i:1503480818;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="/static/index/css/style.css">
 <link rel="stylesheet" href="/static/index/css/contact/public.css">
 <link rel="stylesheet" href="/static/index/css/contact/job.css">
+
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/adminlist.css" />
 </head>
 <body>
 <!-- 首页头部开始 -->
@@ -122,7 +124,7 @@
             </div>
          </div>
      </div>
-
+<?php echo $page; ?>
 <!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	

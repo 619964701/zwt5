@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503452636;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:65:"D:\wamp\www\zwt5\public/../application/index\view\index\news.html";i:1503480059;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +17,8 @@
 <link rel="stylesheet" href="/static/index/css/base1.css">
 <link rel="stylesheet" href="/static/index/css/style.css">
 <link rel="stylesheet" href="/static/index/css/news.css">
+
+<link rel="stylesheet" type="text/css" href="/static/homeback/css/adminlist.css" />
 </head>
 <body>
 <!-- 首页头部开始 -->
@@ -92,6 +94,7 @@
 		<div class="clearfix"></div>
 	</div>
 	<br />
+	<?php echo $page; ?>
 <!-- 底部开始 -->
 	<!-- footer -->
 		<div class="footer">	

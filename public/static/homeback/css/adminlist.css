@@ -1,5 +1,7 @@
     /*分页样式*/  
     .pagination{text-align:center;margin-top:20px;margin-bottom: 20px;}  
-    .pagination li{margin:0px 10px; border:1px solid #e6e6e6;padding: 3px 8px;display: inline-block;}  
+    .pagination li{margin:0px 10px; border:1px solid #e6e6e6;display: inline-block;}  
     .pagination .active{background-color: #dd1a20;color: #fff;}  
     .pagination .disabled{color:#aaa;}  
+    .pagination li a,span{display: inline-block;padding: 4px 9px;}
+	.pagination li a:hover{color:#fff;background:#DD1A20;}

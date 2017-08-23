@@ -157,7 +157,9 @@ class IndexController extends Controller{
                     $twonav = $nav;
                     
                 }
-                $article = Db::name('article')->where('nav_id','=',$twonav['id'])->order('created desc')->select();
+                $article = Db::name('article')->where('nav_id','=',$twonav['id'])->order('created desc')->paginate(8);
+                $page = $article->render();
+                $this->assign('page',$page);
                 $this->assign('article',$article);
                 $this->assign('onenav',$onenav);
                 $this->assign('twonav',$twonav);
@@ -265,7 +267,9 @@ class IndexController extends Controller{
         //头部导航的内容
         $tree = $this->nav();
         $this->assign('list',$tree);
-        $data = Db::name('zhaopin')->select();
+        $data = Db::name('zhaopin')->paginate(2);
+        $page = $data->render();
+        $this->assign('page',$page);
         $this->assign('data',$data);
         return $this->fetch();
     }
