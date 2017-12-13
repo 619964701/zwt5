@@ -1,0 +1,565 @@
+[ 2017-11-17T08:50:33+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/login
+[ log ] www.zwt5.com/homeback/login [运行时间：0.349984s][吞吐率：2.86req/s] [内存消耗：2,625.90kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homeback\controller\LoginController->index[ D:\wamp\www\zwt5\application\homeback\controller\LoginController.php ]
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T09:41:39+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/login
+[ log ] www.zwt5.com/homeback/login [运行时间：0.037571s][吞吐率：26.62req/s] [内存消耗：2,625.20kb] [文件加载：48]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\homeback\controller\LoginController->index[ D:\wamp\www\zwt5\application\homeback\controller\LoginController.php ]
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T09:41:39+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html
+[ log ] www.zwt5.com/captcha.html [运行时间：0.063252s][吞吐率：15.81req/s] [内存消耗：2,176.02kb] [文件加载：39]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/login',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\wamp\www\zwt5\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T09:41:55+08:00 ] 127.0.0.1 127.0.0.1 POST /homeback/login/index.html
+[ log ] www.zwt5.com/homeback/login/index.html [运行时间：0.169769s][吞吐率：5.89req/s] [内存消耗：4,265.52kb] [文件加载：60]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-length' => '45',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'adminname' => 'admin',
+  'password' => 'Ni123321',
+  'verify' => 'u5pr',
+)
+[ info ] [ RUN ] app\homeback\controller\LoginController->index[ D:\wamp\www\zwt5\application\homeback\controller\LoginController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020301s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_admin` [ RunTime:0.020421s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_admin` WHERE  `adminname` = 'admin' LIMIT 1 [ RunTime:0.001028s ]
+[ sql ] [ SQL ] UPDATE `zwt_admin`  SET `last_login`='2017-11-17 09:41:55'  WHERE  `id` = 1 [ RunTime:0.002493s ]
+
+---------------------------------------------------------------
+[ 2017-11-17T09:41:56+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/index/index.html
+[ log ] www.zwt5.com/homeback/index/index.html [运行时间：0.030468s][吞吐率：32.82req/s] [内存消耗：2,673.72kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/login',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\IndexController->index[ D:\wamp\www\zwt5\application\homeback\controller\IndexController.php ]
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\index\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T09:41:56+08:00 ] 127.0.0.1 127.0.0.1 GET /static/homeback/css/bootstrap.css
+[ log ] www.zwt5.com/static/homeback/css/bootstrap.css [运行时间：0.023317s][吞吐率：42.89req/s] [内存消耗：2,147.52kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'homeback',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/index/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T09:41:58+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/article/index.html
+[ log ] www.zwt5.com/homeback/article/index.html [运行时间：0.089835s][吞吐率：11.13req/s] [内存消耗：4,089.67kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/index/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->index[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\article\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'nav',
+  3 => 'tiaoshu',
+  4 => 'ye',
+  5 => 'page',
+  6 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017852s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006822s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM ( SELECT `a`.*,`n`.`pid`,n.id nid,n.navName xnavName FROM `zwt_article` `a` INNER JOIN `zwt_nav` `n` ON `a`.`nav_id`=`n`.`id` ) s INNER JOIN `zwt_nav` `b` ON `s`.`pid`=`b`.`id` LIMIT 1 [ RunTime:0.005998s ]
+[ sql ] [ SQL ] SELECT `s`.*,b.navName dnavName FROM ( SELECT `a`.*,`n`.`pid`,n.id nid,n.navName xnavName FROM `zwt_article` `a` INNER JOIN `zwt_nav` `n` ON `a`.`nav_id`=`n`.`id` ) s INNER JOIN `zwt_nav` `b` ON `s`.`pid`=`b`.`id` ORDER BY s.pid,s.xnavName LIMIT 0,10 [ RunTime:0.003255s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000137s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000109s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000087s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000080s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000078s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000077s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 31 LIMIT 1 [ RunTime:0.000076s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000074s ]
+
+---------------------------------------------------------------
+[ 2017-11-17T09:50:27+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/nav/index.html
+[ log ] www.zwt5.com/homeback/nav/index.html [运行时间：0.074689s][吞吐率：13.39req/s] [内存消耗：3,921.70kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/index/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\NavController->index[ D:\wamp\www\zwt5\application\homeback\controller\NavController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\nav\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017481s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.004764s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000521s ]
+
+---------------------------------------------------------------
+[ 2017-11-17T10:08:18+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/
+[ log ] www.zwt5.com/homeback/ [运行时间：0.025161s][吞吐率：39.74req/s] [内存消耗：2,673.52kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\IndexController->index[ D:\wamp\www\zwt5\application\homeback\controller\IndexController.php ]
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\index\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T10:08:18+08:00 ] 127.0.0.1 127.0.0.1 GET /static/homeback/css/bootstrap.css
+[ log ] www.zwt5.com/static/homeback/css/bootstrap.css [运行时间：0.020735s][吞吐率：48.23req/s] [内存消耗：2,147.63kb] [文件加载：40]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'homeback',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T11:35:17+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/nav/add/id/5.html
+[ log ] www.zwt5.com/homeback/nav/add/id/5.html [运行时间：0.056836s][吞吐率：17.59req/s] [内存消耗：2,659.17kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'nav',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/nav/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\NavController->add[ D:\wamp\www\zwt5\application\homeback\controller\NavController.php ]
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\nav\add.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'pid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T11:35:21+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/nav/add.html
+[ log ] www.zwt5.com/homeback/nav/add.html [运行时间：0.028987s][吞吐率：34.50req/s] [内存消耗：2,658.75kb] [文件加载：49]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'nav',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/index/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\NavController->add[ D:\wamp\www\zwt5\application\homeback\controller\NavController.php ]
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\nav\add.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'pid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-17T11:35:22+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/nav/index.html
+[ log ] www.zwt5.com/homeback/nav/index.html [运行时间：0.054710s][吞吐率：18.28req/s] [内存消耗：3,921.70kb] [文件加载：56]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/index/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\NavController->index[ D:\wamp\www\zwt5\application\homeback\controller\NavController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\nav\index.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011489s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.005006s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000618s ]
+
+---------------------------------------------------------------
+[ 2017-11-17T16:47:15+08:00 ] 127.0.0.1 127.0.0.1 GET /homeback/article/add.html
+[ log ] www.zwt5.com/homeback/article/add.html [运行时间：0.109994s][吞吐率：9.09req/s] [内存消耗：4,065.99kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'homeback',
+    1 => 'article',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.zwt5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.zwt5.com/homeback/index/index.html',
+  'cookie' => 'PHPSESSID=m08ohhk71mv46dsvl9fstqt0r3',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\homeback\controller\ArticleController->add[ D:\wamp\www\zwt5\application\homeback\controller\ArticleController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/homeback\view\article\add.html [ array (
+  0 => 'nickname',
+  1 => 'adminname',
+  2 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001607s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.007874s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 0 [ RunTime:0.000648s ]
+
+---------------------------------------------------------------

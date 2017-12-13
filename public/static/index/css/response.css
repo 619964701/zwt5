@@ -1,0 +1,12 @@
+@media only screen and (max-width: 500px){
+	
+	.play_box{
+	 	width:100%;
+	}
+	.main{
+	 	width:100%;
+	}
+	.footer{
+	 	width:100%;
+	}
+}

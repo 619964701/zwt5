@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp\www\zwt5\public/../application/index\view\index\brand.html";i:1503452505;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1503021190;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:66:"D:\wamp\www\zwt5\public/../application/index\view\index\brand.html";i:1503452505;s:65:"D:\wamp\www\zwt5\public/../application/index\view\Public\top.html";i:1510553302;s:68:"D:\wamp\www\zwt5\public/../application/index\view\Public\footer.html";i:1503386494;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +29,6 @@
 						
 					</a>
 				</div>
-
 				<!-- nav -->
 				<div class="nav">
 					<ul class="navUl">

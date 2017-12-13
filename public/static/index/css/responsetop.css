@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px){
+	body{
+	width:100%;
+	}
+	.header-header{
+		width:100%;
+	}
+	.header{
+	    width:100%;
+	}
+	.logo,.nav,.play_box,.main,.main-box,.main-middle,.main-photo,.footer,.footer-container,.textfooter{
+		width:100%;
+    }
+    .play_box,.imglist{
+	    width:100%;
+    }
+}

@@ -1,0 +1,44 @@
+[ 2017-11-14T10:21:30+08:00 ] 192.168.1.11 192.168.1.11 GET /
+[ log ] 192.168.1.11/ [运行时间：0.241540s][吞吐率：4.14req/s] [内存消耗：3,981.70kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '192.168.1.11',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\index.html [ array (
+  0 => 'list',
+  1 => 'ri',
+  2 => 'ny',
+  3 => 'newest',
+  4 => 'newslist',
+  5 => 'jituan',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000750s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.006867s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 38 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.005049s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`yinxu`,`created` FROM `zwt_article` WHERE  `nav_id` IN (39,40,41) ORDER BY created desc LIMIT 1 [ RunTime:0.001355s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`yinxu`,`created` FROM `zwt_article` WHERE  `nav_id` IN (39,40,41) ORDER BY created desc LIMIT 4 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 7 [ RunTime:0.000290s ]
+
+---------------------------------------------------------------

@@ -234,7 +234,7 @@ return [
     'paginate'               => [
         'type'      => 'bootstrap3',
         'var_page'  => 'page',
-        'list_rows' => 15,
+        'list_rows' => 10,
     ],
     //验证码
     'captcha'=>[

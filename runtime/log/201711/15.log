@@ -1,0 +1,46 @@
+[ 2017-11-15T15:42:37+08:00 ] ::1 ::1 GET /zwt5/public/
+[ log ] localhost/zwt5/public/ [运行时间：0.065118s][吞吐率：15.36req/s] [内存消耗：3,981.95kb] [文件加载：53]
+[ info ] [ LANG ] D:\wamp\www\zwt5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/zwt5/',
+  'cookie' => 'pgv_pvi=7431242752; pgv_si=s8785979392',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\IndexController->index[ D:\wamp\www\zwt5\application\index\controller\IndexController.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\wamp\www\zwt5\public/../application/index\view\index\index.html [ array (
+  0 => 'list',
+  1 => 'ri',
+  2 => 'ny',
+  3 => 'newest',
+  4 => 'newslist',
+  5 => 'jituan',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002772s ] mysql:dbname=zhuwentou;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_nav` [ RunTime:0.009365s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 38 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zwt_article` [ RunTime:0.008039s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`yinxu`,`created` FROM `zwt_article` WHERE  `nav_id` IN (39,40,41) ORDER BY created desc LIMIT 1 [ RunTime:0.001500s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`yinxu`,`created` FROM `zwt_article` WHERE  `nav_id` IN (39,40,41) ORDER BY created desc LIMIT 4 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `zwt_nav` WHERE  `pid` = 7 [ RunTime:0.000305s ]
+
+---------------------------------------------------------------
